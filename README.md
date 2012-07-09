@@ -1,4 +1,2 @@
-Community-APIs-for-AIR
-======================
+Extensions to Adobe AIR on the BlackBerry PlayBook and the BlackBerry 10 Platform.
 
-Extension APIs for AIR
