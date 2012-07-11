@@ -12,7 +12,7 @@ A _**README.md**_ file also needs to be created at the root of your directory wh
 
 ## BlackBerry PlayBook OS ANE Tutorial
 
-You can find an [ANE tutorial](http://supportforums.blackberry.com/t5/Web-and-WebWorks-Development/Tutorial-for-Writing-WebWorks-Extension-for-PlayBook/m-p/1172987) on creating JavaScript extensions for Tablet OS created by a member of the community. 
+You can also find a [tutorial](http://supportforums.blackberry.com/t5/Adobe-AIR-Development/Creating-AIR-Native-Extensions-for-BB10/ta-p/1376479) on creating an ANE created by a member of the community. 
 
 
 ## Testing Your API
