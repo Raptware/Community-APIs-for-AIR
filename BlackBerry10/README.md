@@ -1,6 +1,6 @@
 # Contributing A BlackBerry 10 ANE
 
-When building an API for the BlackBerry 10 SDK for Adobe AIR, you will start by creating a sub-directory within this _**PlayBookOS**_ directory.  Pick a name that suits your extension and try not to use spaces in your directory name.  It just plain makes things easier.  
+When building an API for the BlackBerry 10 SDK for Adobe AIR, you will start by creating a sub-directory within this _**BlackBerry10**_ directory.  Pick a name that suits your extension and try not to use spaces in your directory name.  It just plain makes things easier.  
 
 As a recipe for building your API you can use the [BPS extension](https://github.com/blackberry/Community-APIs-for-AIR/tree/master/BlackBerry10/SampleBPSANE) as a good example.  
 
