@@ -4,7 +4,14 @@
     <platforms>
         <platform name="QNX-ARM">
 			<applicationDeployment>
-				<nativeLibrary>native.so</nativeLibrary> 
+				<nativeLibrary>nativearm.so</nativeLibrary> 
+				<initializer>extensionInitializer</initializer>
+				<finalizer>extensionFinalizer</finalizer>
+			</applicationDeployment>
+        </platform>
+		<platform name="QNX-x86">
+			<applicationDeployment>
+				<nativeLibrary>nativex86.so</nativeLibrary> 
 				<initializer>extensionInitializer</initializer>
 				<finalizer>extensionFinalizer</finalizer>
 			</applicationDeployment>
