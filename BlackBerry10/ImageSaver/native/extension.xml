@@ -1,0 +1,20 @@
+<extension xmlns="http://ns.adobe.com/air/extension/3.1">
+    <id>qnx.media.ImageSaver</id>
+    <versionNumber>1.0.0</versionNumber>
+    <platforms>
+        <platform name="QNX-ARM">
+            <applicationDeployment>
+                <nativeLibrary>nativearm.so</nativeLibrary>
+                <initializer>extensionInitializer</initializer>
+                <finalizer>extensionFinalizer</finalizer>
+            </applicationDeployment>
+        </platform>
+        <platform name="QNX-x86">
+            <applicationDeployment>
+                <nativeLibrary>nativex86.so</nativeLibrary>
+                <initializer>extensionInitializer</initializer>
+                <finalizer>extensionFinalizer</finalizer>
+            </applicationDeployment>
+        </platform>
+    </platforms>
+</extension>
