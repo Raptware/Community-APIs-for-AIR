@@ -1,0 +1,10 @@
+.DS_Store
+#
+*.swc
+*.swf
+*.bar
+tmp/
+
+# Other files and folders
+Device-Debug/
+Simulator-Debug/
