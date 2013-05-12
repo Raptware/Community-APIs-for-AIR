@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<swc xmlns="http://www.adobe.com/flash/swccatalog/9">
+  <versions>
+    <swc version="1.2" />
+    <flex version="4.6.0" build="23201" minimumSupportedVersion="3.0.0" />
+  </versions>
+  <features>
+    <feature-script-deps />
+    <feature-files />
+  </features>
+  <libraries>
+    <library path="library.swf">
+      <script name="net/rim/bbm/BBMProfileBoxItem" mod="1361562899000" signatureChecksum="226916773" >
+        <def id="net.rim.bbm:BBMProfileBoxItem" /> 
+        <dep id="net.rim.bbm:BBMManager" type="e" /> 
+        <dep id="net.rim.bbm:bbm_internal" type="n" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:EventDispatcher" type="i" /> 
+      </script>
+      <script name="net/rim/bbm/BBMUserProfile" mod="1361570137000" signatureChecksum="1627713936" >
+        <def id="net.rim.bbm:BBMUserProfile" /> 
+        <dep id="net.rim.bbm:BBMManager" type="e" /> 
+        <dep id="net.rim.bbm:BBMResult" type="e" /> 
+        <dep id="net.rim.bbm:bbm_internal" type="n" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="net/rim/bbm/BBMResult" mod="1361562996000" signatureChecksum="2190552711" >
+        <def id="net.rim.bbm:BBMResult" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="_277e0fafbafaaa4db373f7e89b9dd99ccf62b2fc893acf4fde0cd36c56f3b830_flash_display_Sprite" mod="1363720612955" signatureChecksum="1630371441" >
+        <def id="_277e0fafbafaaa4db373f7e89b9dd99ccf62b2fc893acf4fde0cd36c56f3b830_flash_display_Sprite" /> 
+        <dep id="flash.system:Security" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.display:Sprite" type="i" /> 
+      </script>
+      <script name="qnx/ui/data/IDataProvider" mod="1358967300100" signatureChecksum="1256452103" >
+        <def id="qnx.ui.data:IDataProvider" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:IEventDispatcher" type="i" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="net/rim/bbm/data/BBMDataProvider" mod="1361565963000" signatureChecksum="4061348516" >
+        <def id="net.rim.bbm.data:BBMDataProvider" /> 
+        <dep id="RangeError" type="e" /> 
+        <dep id="qnx.ui.events:DataProviderEvent" type="e" /> 
+        <dep id="qnx.ui.events:DataProviderEvent" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:EventDispatcher" type="i" /> 
+        <dep id="qnx.ui.data:IDataProvider" type="i" /> 
+      </script>
+      <script name="net/rim/bbm/data/BBMProfileBoxItemProvider" mod="1361565968000" signatureChecksum="1047168074" >
+        <def id="net.rim.bbm.data:BBMProfileBoxItemProvider" /> 
+        <dep id="net.rim.bbm:BBMProfileBoxItem" type="e" /> 
+        <dep id="qnx.ui.events:DataProviderEvent" type="e" /> 
+        <dep id="net.rim.bbm:BBMProfileBoxItem" type="s" /> 
+        <dep id="net.rim.bbm:bbm_internal" type="n" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="net.rim.bbm.data:BBMDataProvider" type="i" /> 
+      </script>
+      <script name="net/rim/bbm/BBMContactUpdateTypes" mod="1361562407000" signatureChecksum="1761434181" >
+        <def id="net.rim.bbm:BBMContactUpdateTypes" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="net/rim/events/BBMUserProfileEvent" mod="1361569249000" signatureChecksum="447371758" >
+        <def id="net.rim.events:BBMUserProfileEvent" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:Event" type="i" /> 
+      </script>
+      <script name="qnx/ui/events/DataProviderEvent" mod="1324045956624" signatureChecksum="1109074346" >
+        <def id="qnx.ui.events:DataProviderEvent" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:Event" type="i" /> 
+      </script>
+      <script name="net/rim/events/BBMContactEvent" mod="1361565401000" signatureChecksum="3983965205" >
+        <def id="net.rim.events:BBMContactEvent" /> 
+        <dep id="net.rim.bbm:BBMContact" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:Event" type="i" /> 
+      </script>
+      <script name="net/rim/bbm/BBMContact" mod="1361561909000" signatureChecksum="3693139367" >
+        <def id="net.rim.bbm:BBMContact" /> 
+        <dep id="net.rim.bbm:bbm_internal" type="n" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="net/rim/bbm/BBMContactStatus" mod="1361562020000" signatureChecksum="585836545" >
+        <def id="net.rim.bbm:BBMContactStatus" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="net/rim/bbm/bbm_internal" mod="1359754036000" signatureChecksum="4285604073" >
+        <def id="net.rim.bbm:bbm_internal" /> 
+        <dep id="AS3" type="n" /> 
+      </script>
+      <script name="net/rim/bbm/data/BBMContactsProvider" mod="1361565955000" signatureChecksum="2747500027" >
+        <def id="net.rim.bbm.data:BBMContactsProvider" /> 
+        <dep id="net.rim.bbm:BBMContact" type="e" /> 
+        <dep id="net.rim.bbm:BBMContactUpdateTypes" type="e" /> 
+        <dep id="qnx.ui.events:DataProviderEvent" type="e" /> 
+        <dep id="net.rim.bbm:BBMContact" type="s" /> 
+        <dep id="net.rim.bbm:bbm_internal" type="n" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="net.rim.bbm.data:BBMDataProvider" type="i" /> 
+      </script>
+      <script name="net/rim/bbm/BBMManager" mod="1362594004000" signatureChecksum="3296947236" >
+        <def id="net.rim.bbm:BBMManager" /> 
+        <dep id="net.rim.events:BBMContactEvent" type="e" /> 
+        <dep id="net.rim.bbm.data:BBMContactsProvider" type="e" /> 
+        <dep id="net.rim.bbm:BBMContact" type="e" /> 
+        <dep id="net.rim.bbm.data:BBMProfileBoxItemProvider" type="e" /> 
+        <dep id="flash.utils:ByteArray" type="e" /> 
+        <dep id="flash.external:ExtensionContext" type="e" /> 
+        <dep id="flash.filesystem:FileMode" type="e" /> 
+        <dep id="net.rim.events:BBMUserProfileEvent" type="e" /> 
+        <dep id="net.rim.bbm:BBMContactUpdateTypes" type="e" /> 
+        <dep id="net.rim.events:BBMRegisterEvent" type="e" /> 
+        <dep id="net.rim.bbm:BBMResult" type="e" /> 
+        <dep id="flash.filesystem:FileStream" type="e" /> 
+        <dep id="net.rim.bbm:BBMProfileBoxItem" type="e" /> 
+        <dep id="flash.events:StatusEvent" type="e" /> 
+        <dep id="flash.filesystem:File" type="e" /> 
+        <dep id="net.rim.bbm:BBMUserProfile" type="s" /> 
+        <dep id="net.rim.bbm.data:BBMContactsProvider" type="s" /> 
+        <dep id="qnx.ui.data:IDataProvider" type="s" /> 
+        <dep id="net.rim.bbm:BBMContact" type="s" /> 
+        <dep id="flash.utils:ByteArray" type="s" /> 
+        <dep id="net.rim.bbm.data:BBMProfileBoxItemProvider" type="s" /> 
+        <dep id="flash.filesystem:FileStream" type="s" /> 
+        <dep id="net.rim.bbm:BBMProfileBoxItem" type="s" /> 
+        <dep id="flash.events:StatusEvent" type="s" /> 
+        <dep id="flash.filesystem:File" type="s" /> 
+        <dep id="flash.external:ExtensionContext" type="s" /> 
+        <dep id="net.rim.bbm:bbm_internal" type="n" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:EventDispatcher" type="i" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="net/rim/events/BBMRegisterEvent" mod="1361565691000" signatureChecksum="1115057707" >
+        <def id="net.rim.events:BBMRegisterEvent" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:Event" type="i" /> 
+      </script>
+      <digests>
+        <digest type="SHA-256" signed="false" value="a7ae2d8cb6c5521fa1d2d45e46a21f19682e7c2b951735b4fe441806740b6b07"   />
+      </digests>
+    </library>
+  </libraries>
+  <files>
+  </files>
+</swc>
