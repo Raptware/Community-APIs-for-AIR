@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?><allClasses><apiPackage id="net.rim.bbm"><apiName>net.rim.bbm</apiName><apiClassifier id="net.rim.bbm:BBMContactUpdateTypes"><apiName>BBMContactUpdateTypes</apiName><shortdesc>
+	 The types of updates that a user or a contact can make to their BBM profile.</shortdesc><prolog><asMetadata/><asCustoms><bbtags><version>10.2</version>
+     <foundin>BBM.ane</foundin>
+     </bbtags></asCustoms></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 The types of updates that a user or a contact can make to their BBM profile.
+	 <p>
+	 Update types are used to determine which property was updated when a <codeph>BBMContactEvent</codeph> event is dispatched.
+	 </p>
+	 </apiDesc></apiClassifierDetail><apiValue id="net.rim.bbm:BBMContactUpdateTypes:DISPLAY_NAME"><apiName>DISPLAY_NAME</apiName><shortdesc>
+		  Indicates that the display name has changed.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>unknown</apiData><apiType value="int"/></apiValueDef><apiDesc>
+		  Indicates that the display name has changed.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.bbm:BBMContactUpdateTypes:DISPLAY_PICTURE"><apiName>DISPLAY_PICTURE</apiName><shortdesc>
+		 Indicates that the display picture has changed.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>unknown</apiData><apiType value="int"/></apiValueDef><apiDesc>
+		 Indicates that the display picture has changed.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.bbm:BBMContactUpdateTypes:INSTALL_APP"><apiName>INSTALL_APP</apiName><shortdesc>
+		 Indicates that your app was installed/enabled.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>unknown</apiData><apiType value="int"/></apiValueDef><apiDesc>
+		 Indicates that your app was installed/enabled.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.bbm:BBMContactUpdateTypes:PERSONAL_MESSAGE"><apiName>PERSONAL_MESSAGE</apiName><shortdesc>
+		 Indicates that the personal message has changed.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>unknown</apiData><apiType value="int"/></apiValueDef><apiDesc>
+		 Indicates that the personal message has changed.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.bbm:BBMContactUpdateTypes:STATUS"><apiName>STATUS</apiName><shortdesc>
+		 Indicates that the status has changed.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>unknown</apiData><apiType value="int"/></apiValueDef><apiDesc>
+		 Indicates that the status has changed.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.bbm:BBMContactUpdateTypes:UNINSTALL_APP"><apiName>UNINSTALL_APP</apiName><shortdesc>
+		 Indicates that your app was uninstalled/disabled.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>unknown</apiData><apiType value="int"/></apiValueDef><apiDesc>
+		 Indicates that your app was uninstalled/disabled.
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="net.rim.bbm:BBMUserProfile"><apiName>BBMUserProfile</apiName><shortdesc>
+	 Represents the device User in the BBM Social Platform.</shortdesc><prolog><asMetadata/><asCustoms><bbtags><version>10.2</version>
+     <foundin>BBM.ane</foundin>
+     </bbtags></asCustoms></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 Represents the device User in the BBM Social Platform.
+	 <p>
+	 <codeph>BBMUserProfile</codeph> is a class that represents the device user in the BBM Social Platform. 
+	 The class provides getters and setters to attributes of the device User.
+	 </p>
+	 </apiDesc></apiClassifierDetail><apiValue id="net.rim.bbm:BBMUserProfile:appVersion:get"><apiName>appVersion</apiName><shortdesc>
+		 Gets the version of the application installed.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc>
+		 Gets the version of the application installed.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.bbm:BBMUserProfile:displayName:get"><apiName>displayName</apiName><shortdesc>
+		 Get the display name of the user.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc>
+		 Get the display name of the user.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.bbm:BBMUserProfile:id:get"><apiName>id</apiName><shortdesc>
+		 Get the id of the user.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc>
+		 Get the id of the user.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.bbm:BBMUserProfile:personalMessage:get"><apiName>personalMessage</apiName><shortdesc>
+		 Get the personal message of the user.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc>
+		 Get the personal message of the user.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.bbm:BBMUserProfile:personalStatus:get"><apiName>personalStatus</apiName><shortdesc>
+		 Get or set the personal status of the user.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc>
+		 Get or set the personal status of the user.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.bbm:BBMUserProfile:profileUrl:get"><apiName>profileUrl</apiName><shortdesc>
+		 Gets the url of the profile image for the user.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc>
+		 Gets the url of the profile image for the user.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.bbm:BBMUserProfile:status:get"><apiName>status</apiName><shortdesc>
+		 Gets or sets the users status.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="int"/></apiValueDef><apiDesc>
+		 Gets or sets the users status.
+		 <p>
+		 Valid values can be found in the <codeph>BBMContactStatus</codeph> class.
+		 </p>
+		 </apiDesc></apiValueDetail><related-links><link href="net.rim.bbm.xml#BBMContactStatus"><linktext>BBMContactStatus</linktext></link></related-links></apiValue></apiClassifier><apiClassifier id="net.rim.bbm:BBMContact"><apiName>BBMContact</apiName><shortdesc>
+	 Represents a contact in the BBM Social Platform.</shortdesc><prolog><asMetadata/><asCustoms><bbtags><version>10.2</version>
+     <foundin>BBM.ane</foundin>
+     </bbtags></asCustoms></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 Represents a contact in the BBM Social Platform.
+	 <p>
+	 <codeph>BBMContact</codeph> is a class that represents a contact accessible through the BBM Social Platform. 
+	 The class provides accessor methods to the main attributes of the contact including display name, message and status.
+	 </p>
+	 </apiDesc></apiClassifierDetail><apiValue id="net.rim.bbm:BBMContact:appVersion:get"><apiName>appVersion</apiName><shortdesc>
+		 Retrieve a contact's version of the app that they have installed.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc>
+		 Retrieve a contact's version of the app that they have installed.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.bbm:BBMContact:displayName:get"><apiName>displayName</apiName><shortdesc>
+		 Retrieve a contact's display name.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc>
+		 Retrieve a contact's display name.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.bbm:BBMContact:id:get"><apiName>id</apiName><shortdesc>
+		 Retrieve a contact's id.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc>
+		 Retrieve a contact's id.
+		 <p>
+		 The user's PPID is the same across multiple instances of BBM (for
+ 		 example, on a BlackBerry smartphone and a BlackBerry tablet), when the user
+ 		 signs in with the same BlackBerry ID. The ID is encoded as a Base64 string
+ 		 using the ASCII character set.
+		 </p>
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.bbm:BBMContact:personalMessage:get"><apiName>personalMessage</apiName><shortdesc>
+		 Retrieve a contact's personal message.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc>
+		 Retrieve a contact's personal message.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.bbm:BBMContact:personalStatus:get"><apiName>personalStatus</apiName><shortdesc>
+		 
+		 Retrieve a contact's status message.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc>
+		 
+		 Retrieve a contact's status message.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.bbm:BBMContact:profileUrl:get"><apiName>profileUrl</apiName><shortdesc>
+		 Retrieve the url for a contact's profile image.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc>
+		 Retrieve the url for a contact's profile image.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.bbm:BBMContact:status:get"><apiName>status</apiName><shortdesc>
+		 Retrieve a contact's status.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="int"/></apiValueDef><apiDesc>
+		 Retrieve a contact's status.
+		 <p>
+		 Valid values can be found in the <codeph>BBMContactStatus</codeph> class.
+		 </p>
+		 </apiDesc></apiValueDetail><related-links><link href="net.rim.bbm.xml#BBMContactStatus"><linktext>BBMContactStatus</linktext></link></related-links></apiValue></apiClassifier><apiClassifier id="net.rim.bbm:BBMManager"><apiName>BBMManager</apiName><shortdesc>
+	 The BBMManager class is used to interact with the BBM Social Platform.</shortdesc><prolog><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>flash.events:EventDispatcher</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 The <codeph>BBMManager</codeph> class is used to interact with the BBM Social Platform.
+	 <p>
+	 For example, you can:
+	 <ul>
+	 <li>Invite BBM contacts to download your app by accessing a user's BBM contact list.</li>
+	 <li>Update a user's BBM personal message, status, and avatar.</li>
+	 <li>Add a customizable application box to a user's BBM profile to broadcast achievements or provide updates.</li>
+	 </ul>
+	 </p>
+	 <p>
+	 Applications wishing to use the <codeph>BBMManager</codeph> must ensure that their application includes the following permission in their bar-descriptor.xml file.
+	 
+	 <b>&lt;permission&gt;bbm_connect&lt;/permission&gt;</b>
+	 </p>
+	 <p>
+	 Connecting to the BBM Social Platform starts with registering your app. 
+	 The BBM Social Platform APIs are not generally available for use until the app is registered. 
+	 Successful registration is indicated when <codeph>BBMRegisterEvent.SUCCESS</codeph> event is recieved.
+	 </p>
+	 </apiDesc></apiClassifierDetail><apiValue id="net.rim.bbm:BBMManager:bbmManager:get"><apiName>bbmManager</apiName><shortdesc>
+		 Returns the singelton instance of BBMManager
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiStatic/><apiValueAccess value="read"/><apiValueClassifier>net.rim.bbm:BBMManager</apiValueClassifier></apiValueDef><apiDesc>
+		 Returns the singelton instance of <codeph>BBMManager</codeph>
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.bbm:BBMManager:contacts:get"><apiName>contacts</apiName><shortdesc>
+		 Returns a list of BBM contacts that have the application installed.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="qnx.ui.data:IDataProvider"/></apiValueDef><apiDesc>
+		 Returns a list of BBM contacts that have the application installed.
+		 <p>
+		 The <codeph>IDataProvider</codeph> list is populated with <codeph>BBMContact</codeph> objects.
+		 </p>
+		 <p>
+		 It is important that you do not modify this list in any way. The list of contacts is managed strictly by this class. 
+		 Modifiying the list could lead to potential issues.
+		 </p>
+		 </apiDesc></apiValueDetail><related-links><link href="" invalidHref="net.rim.bbm.BBMContacts.xml"><linktext>BBMContacts</linktext></link></related-links></apiValue><apiValue id="net.rim.bbm:BBMManager:profileBoxItems:get"><apiName>profileBoxItems</apiName><shortdesc>
+		 Returns a list of user profile box items for the current user.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="qnx.ui.data:IDataProvider"/></apiValueDef><apiDesc>
+		 Returns a list of user profile box items for the current user.
+		 <p>
+		 The <codeph>IDataProvider</codeph> list is populated with <codeph>BBMProfileBoxItem</codeph> objects.
+		 </p>
+		 <p>
+		 In order to access the users profile box items, the <codeph>canShowProfileBox()</codeph> method must return <codeph>true</codeph>.
+		 </p>
+		 <p>
+		 It is important that you do not modify this list in any way. The list of profile box items is managed strictly by this class. 
+		 Modifiying the list could lead to potential issues.
+		 </p>
+		 </apiDesc></apiValueDetail><related-links><link href="net.rim.bbm.xml#BBMProfileBoxItem"><linktext>BBMProfileBoxItem</linktext></link></related-links></apiValue><apiValue id="net.rim.bbm:BBMManager:version:get"><apiName>version</apiName><shortdesc>
+		 Gets the version number of the BBM Social Platform.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="int"/></apiValueDef><apiDesc>
+		 Gets the version number of the BBM Social Platform.
+		 <p>
+		 Retrieves the version of the BBM Social Platform library that your application is using. 
+		 You can use the version number to check whether your application is compatible with this version of the BBM Social Platform.
+		 </p>
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="net.rim.bbm:BBMProfileBoxItem"><apiName>BBMProfileBoxItem</apiName><shortdesc>
+	 Represents a profile box item in the BBM Social Platform.</shortdesc><prolog><asMetadata/><asCustoms><bbtags><version>10.2</version>
+     <foundin>BBM.ane</foundin>
+     </bbtags></asCustoms></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>flash.events:EventDispatcher</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 Represents a profile box item in the BBM Social Platform.
+	 <p>
+	 <codeph>BBMProfileBoxItem</codeph> is a class that represents a profile box item accessible through the BBM Social Platform. 
+	 The class provides accessor methods to the main attributes of the ProfileBoxItem including cookie, id, iconId and text.
+	 </p>
+	 </apiDesc></apiClassifierDetail><apiValue id="net.rim.bbm:BBMProfileBoxItem:cookie:get"><apiName>cookie</apiName><shortdesc>
+		 Retrieve the cookie of the item.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc>
+		 Retrieve the cookie of the item.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.bbm:BBMProfileBoxItem:iconId:get"><apiName>iconId</apiName><shortdesc>
+		 Retrieve the icon id of the item.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="int"/></apiValueDef><apiDesc>
+		 Retrieve the icon id of the item.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.bbm:BBMProfileBoxItem:iconUrl:get"><apiName>iconUrl</apiName><shortdesc>
+		 Retrieve the url for the icon of the item.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc>
+		 Retrieve the url for the icon of the item.
+		 <p>
+		 If <codeph>null</codeph>, application developers should call the<codeph>retrieveIcon()</codeph>
+		 icon method in order to get the url to the icon. When the icon url is retrieved, this property
+		 is automatically updated with the url. 
+		 </p>
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.bbm:BBMProfileBoxItem:id:get"><apiName>id</apiName><shortdesc>
+		 Retrieve the id of the item.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc>
+		 Retrieve the id of the item.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.bbm:BBMProfileBoxItem:text:get"><apiName>text</apiName><shortdesc>
+		 Retrieve the text of the item.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc>
+		 Retrieve the text of the item.
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="net.rim.bbm:BBMContactStatus"><apiName>BBMContactStatus</apiName><shortdesc>
+	 Represents the status of the device User or a BBMContact.</shortdesc><prolog><asMetadata/><asCustoms><bbtags><version>10.2</version>
+     <foundin>BBM.ane</foundin>
+	 </bbtags></asCustoms></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 Represents the status of the device User or a <codeph>BBMContact</codeph>.
+	 </apiDesc></apiClassifierDetail><apiValue id="net.rim.bbm:BBMContactStatus:AVAILABLE"><apiName>AVAILABLE</apiName><shortdesc>
+		 User status that indicates that the user is available.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>0</apiData><apiType value="int"/></apiValueDef><apiDesc>
+		 User status that indicates that the user is available.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.bbm:BBMContactStatus:BUSY"><apiName>BUSY</apiName><shortdesc>
+		 User status that indicates that the user is busy.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>1</apiData><apiType value="int"/></apiValueDef><apiDesc>
+		 User status that indicates that the user is busy.
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="net.rim.bbm:BBMResult"><apiName>BBMResult</apiName><shortdesc>
+	 Result codes that can be returned by a function.</shortdesc><prolog><asMetadata/><asCustoms><bbtags><version>10.2</version>
+     <foundin>BBM.ane</foundin>
+	 </bbtags></asCustoms></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 Result codes that can be returned by a function.
+	 </apiDesc></apiClassifierDetail><apiValue id="net.rim.bbm:BBMResult:ASYNC"><apiName>ASYNC</apiName><shortdesc>
+		Indicates that an operation will be completed asynchronously.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>1</apiData><apiType value="int"/></apiValueDef><apiDesc>
+		Indicates that an operation will be completed asynchronously.
+		</apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.bbm:BBMResult:FAILURE"><apiName>FAILURE</apiName><shortdesc>
+		 Indicates that a function did not complete successfully.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>-1</apiData><apiType value="int"/></apiValueDef><apiDesc>
+		 Indicates that a function did not complete successfully.
+		</apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.bbm:BBMResult:SUCCESS"><apiName>SUCCESS</apiName><shortdesc>
+		Indicates that a function has completed successfully.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>0</apiData><apiType value="int"/></apiValueDef><apiDesc>
+		Indicates that a function has completed successfully.
+		</apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage><apiPackage id="net.rim.events"><apiName>net.rim.events</apiName><apiClassifier id="net.rim.events:BBMUserProfileEvent"><apiName>BBMUserProfileEvent</apiName><shortdesc>
+	 BBMUserProfileEvent events are dispatched by the BBMManager class when the users profile is updated.</shortdesc><prolog><asMetadata/><asCustoms><bbtags><version>10.2</version>
+     <foundin>BBM.ane</foundin>
+	 </bbtags></asCustoms></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>flash.events:Event</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 <codeph>BBMUserProfileEvent</codeph> events are dispatched by the <codeph>BBMManager</codeph> class when the users profile is updated.
+	 </apiDesc></apiClassifierDetail><apiValue id="net.rim.events:BBMUserProfileEvent:UPDATE"><apiName>UPDATE</apiName><shortdesc>
+		 Event type dispatched when the user profile is updated.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>userProfileUpdate</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 Event type dispatched when the user profile is updated.
+		 <p>The BBMUserProfileEvent.UPDATE constant defines the value of the
+	      <codeph>type</codeph> property of the event object for an
+	      <codeph>userProfileUpdate</codeph> event.</p>
+	     	      <p>The properties of the event object have the following values:</p>
+	      <adobetable class="innertable">
+	         
+	         
+	         
+	         
+	         
+	         
+	      <tgroup cols="2"><thead><row><entry>Property</entry><entry>Value</entry></row></thead><tbody><row><entry><codeph>bubbles</codeph></entry><entry>false</entry></row><row><entry><codeph>cancelable</codeph></entry><entry>false</entry></row><row><entry><codeph>currentTarget</codeph></entry><entry>The object that is actively processing the Event object with an event listener.</entry></row><row><entry><codeph>type</codeph></entry><entry>BBMUserProfileEvent.UPDATE</entry></row><row><entry><codeph>updateType</codeph></entry><entry>What was updated in the users profile.</entry></row></tbody></tgroup></adobetable>
+	     	      </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.events:BBMUserProfileEvent:updateType:get"><apiName>updateType</apiName><shortdesc>
+		 Defines what was updated for the specified user profile.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="int"/></apiValueDef><apiDesc>
+		 Defines what was updated for the specified user profile.
+		 <p>
+		 Valid values can be found in <codeph>BBMContactupdateTypes</codeph>
+		 </p>
+		 </apiDesc></apiValueDetail><related-links><link href="" invalidHref="net.rim.events.BBMContactUpdateTypes.xml"><linktext>BBMContactUpdateTypes</linktext></link></related-links></apiValue></apiClassifier><apiClassifier id="net.rim.events:BBMRegisterEvent"><apiName>BBMRegisterEvent</apiName><shortdesc>
+	 BBMRegisterEvent events are dispatched by the BBMManager class when registration events occur.</shortdesc><prolog><asMetadata/><asCustoms><bbtags><version>10.2</version>
+     <foundin>BBM.ane</foundin>
+     </bbtags></asCustoms></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>flash.events:Event</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 <codeph>BBMRegisterEvent</codeph> events are dispatched by the <codeph>BBMManager</codeph> class when registration events occur.
+	 </apiDesc></apiClassifierDetail><apiValue id="net.rim.events:BBMRegisterEvent:DENIED"><apiName>DENIED</apiName><shortdesc>
+		 Event type dispatched when access to the BBM Social Platform is denied.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>register_denied</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 Event type dispatched when access to the BBM Social Platform is denied. This is usually the result of the user turning off BBM in the application permissions.
+		 <p>The BBMRegisterEvent.DENIED constant defines the value of the
+	      <codeph>type</codeph> property of the event object for an
+	      <codeph>register_denied</codeph> event.</p>
+	     	      <p>The properties of the event object have the following values:</p>
+	      <adobetable class="innertable">
+	         
+	         
+	         
+	         
+	         
+	      <tgroup cols="2"><thead><row><entry>Property</entry><entry>Value</entry></row></thead><tbody><row><entry><codeph>bubbles</codeph></entry><entry>false</entry></row><row><entry><codeph>cancelable</codeph></entry><entry>false</entry></row><row><entry><codeph>currentTarget</codeph></entry><entry>The object that is actively processing the Event object with an event listener.</entry></row><row><entry><codeph>type</codeph></entry><entry>BBMRegisterEvent.DENIED</entry></row></tbody></tgroup></adobetable>
+	     	      </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.events:BBMRegisterEvent:PENDING"><apiName>PENDING</apiName><shortdesc>
+		 Event type dispatched when the application is in the process of registering with the BBM Social Platform.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>register_pending</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 Event type dispatched when the application is in the process of registering with the BBM Social Platform.
+		 <p>The BBMRegisterEvent.PENDING constant defines the value of the
+	      <codeph>type</codeph> property of the event object for an
+	      <codeph>register_pending</codeph> event.</p>
+	     	      <p>The properties of the event object have the following values:</p>
+	      <adobetable class="innertable">
+	         
+	         
+	         
+	         
+	         
+	      <tgroup cols="2"><thead><row><entry>Property</entry><entry>Value</entry></row></thead><tbody><row><entry><codeph>bubbles</codeph></entry><entry>false</entry></row><row><entry><codeph>cancelable</codeph></entry><entry>false</entry></row><row><entry><codeph>currentTarget</codeph></entry><entry>The object that is actively processing the Event object with an event listener.</entry></row><row><entry><codeph>type</codeph></entry><entry>BBMRegisterEvent.PENDING</entry></row></tbody></tgroup></adobetable>
+	     	      </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.events:BBMRegisterEvent:SUCCESS"><apiName>SUCCESS</apiName><shortdesc>
+		 Event type dispatched when the application has successfully registered with the BBM Social Platform.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>register_success</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 Event type dispatched when the application has successfully registered with the BBM Social Platform.
+		 <p>The BBMRegisterEvent.SUCCESS constant defines the value of the
+	      <codeph>type</codeph> property of the event object for an
+	      <codeph>register_success</codeph> event.</p>
+	     	      <p>The properties of the event object have the following values:</p>
+	      <adobetable class="innertable">
+	         
+	         
+	         
+	         
+	         
+	      <tgroup cols="2"><thead><row><entry>Property</entry><entry>Value</entry></row></thead><tbody><row><entry><codeph>bubbles</codeph></entry><entry>false</entry></row><row><entry><codeph>cancelable</codeph></entry><entry>false</entry></row><row><entry><codeph>currentTarget</codeph></entry><entry>The object that is actively processing the Event object with an event listener.</entry></row><row><entry><codeph>type</codeph></entry><entry>BBMRegisterEvent.SUCCESS</entry></row></tbody></tgroup></adobetable>
+	     	      </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.events:BBMRegisterEvent:UNREGISTERED"><apiName>UNREGISTERED</apiName><shortdesc>
+		 Event type dispatched when the application is not registered with the BBM Social Platform.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>register_unregistered</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 Event type dispatched when the application is not registered with the BBM Social Platform.
+		 <p>The BBMRegisterEvent.UNREGISTERED constant defines the value of the
+	      <codeph>type</codeph> property of the event object for an
+	      <codeph>register_unregistered</codeph> event.</p>
+	     	      <p>The properties of the event object have the following values:</p>
+	      <adobetable class="innertable">
+	         
+	         
+	         
+	         
+	         
+	      <tgroup cols="2"><thead><row><entry>Property</entry><entry>Value</entry></row></thead><tbody><row><entry><codeph>bubbles</codeph></entry><entry>false</entry></row><row><entry><codeph>cancelable</codeph></entry><entry>false</entry></row><row><entry><codeph>currentTarget</codeph></entry><entry>The object that is actively processing the Event object with an event listener.</entry></row><row><entry><codeph>type</codeph></entry><entry>BBMRegisterEvent.UNREGISTERED</entry></row></tbody></tgroup></adobetable>
+	     	      </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="net.rim.events:BBMContactEvent"><apiName>BBMContactEvent</apiName><shortdesc>
+	 BBMContactEvent events are dispatched by the BBMManager class when contacts are updated.</shortdesc><prolog><asMetadata/><asCustoms><bbtags><version>10.2</version>
+     <foundin>BBM.ane</foundin>
+	 </bbtags></asCustoms></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>flash.events:Event</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 <codeph>BBMContactEvent</codeph> events are dispatched by the <codeph>BBMManager</codeph> class when contacts are updated.
+	 </apiDesc></apiClassifierDetail><apiValue id="net.rim.events:BBMContactEvent:CONTACT_LIST"><apiName>CONTACT_LIST</apiName><shortdesc>
+		 Event type dispatched when the contact list is retrieved from the BBM Social Platform servers.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>contact_list</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 Event type dispatched when the contact list is retrieved from the BBM Social Platform servers.
+		 <p>The BBMContactEvent.CONTACT_LIST constant defines the value of the
+	      <codeph>type</codeph> property of the event object for an
+	      <codeph>contact_list</codeph> event.</p>
+	     	      <p>The properties of the event object have the following values:</p>
+	      <adobetable class="innertable">
+	         
+	         
+	         
+	         
+	         
+	         
+	         
+	      <tgroup cols="2"><thead><row><entry>Property</entry><entry>Value</entry></row></thead><tbody><row><entry><codeph>bubbles</codeph></entry><entry>false</entry></row><row><entry><codeph>cancelable</codeph></entry><entry>false</entry></row><row><entry><codeph>contact</codeph></entry><entry>The contact property is null for this event type.</entry></row><row><entry><codeph>currentTarget</codeph></entry><entry>The object that is actively processing the Event object with an event listener.</entry></row><row><entry><codeph>type</codeph></entry><entry>BBMContactEvent.CONTACT_LIST</entry></row><row><entry><codeph>updateType</codeph></entry><entry>The updateType property is null for this event type.</entry></row></tbody></tgroup></adobetable>
+	     	      </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.events:BBMContactEvent:CONTACT_UPDATE"><apiName>CONTACT_UPDATE</apiName><shortdesc>
+		 Event type dispatched when a contact is updated.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>contact_update</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 Event type dispatched when a contact is updated.
+		 <p>The BBMContactEvent.CONTACT_UPDATE constant defines the value of the
+	      <codeph>type</codeph> property of the event object for an
+	      <codeph>contact_update</codeph> event.</p>
+	     	      <p>The properties of the event object have the following values:</p>
+	      <adobetable class="innertable">
+	         
+	         
+	         
+	         
+	         
+	         
+	         
+	      <tgroup cols="2"><thead><row><entry>Property</entry><entry>Value</entry></row></thead><tbody><row><entry><codeph>bubbles</codeph></entry><entry>false</entry></row><row><entry><codeph>cancelable</codeph></entry><entry>false</entry></row><row><entry><codeph>contact</codeph></entry><entry>The contact that was updated.</entry></row><row><entry><codeph>currentTarget</codeph></entry><entry>The object that is actively processing the Event object with an event listener.</entry></row><row><entry><codeph>type</codeph></entry><entry>BBMContactEvent.CONTACT_UPDATE</entry></row><row><entry><codeph>updateType</codeph></entry><entry>The property that of the contact that was updated.</entry></row></tbody></tgroup></adobetable>
+	     	      </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.events:BBMContactEvent:contact:get"><apiName>contact</apiName><shortdesc>
+		 The contact that was updated.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiValueClassifier>net.rim.bbm:BBMContact</apiValueClassifier></apiValueDef><apiDesc>
+		 The contact that was updated. 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.events:BBMContactEvent:updateType:get"><apiName>updateType</apiName><shortdesc>
+		 Defines what was updated for the specified contact.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="int"/></apiValueDef><apiDesc>
+		 Defines what was updated for the specified contact.
+		 <p>
+		 Valid values can be found in <codeph>BBMContactupdateTypes</codeph>
+		 </p>
+		 </apiDesc></apiValueDetail><related-links><link href="" invalidHref="net.rim.events.BBMContactUpdateTypes.xml"><linktext>BBMContactUpdateTypes</linktext></link></related-links></apiValue></apiClassifier></apiPackage></allClasses>

@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<allClasses>
+   <apiPackage id="net.rim.bbm">
+      <apiName>net.rim.bbm</apiName>
+      <apiDetail/>
+      <apiClassifier id="net.rim.bbm:BBMContactUpdateTypes">
+         <apiName>BBMContactUpdateTypes</apiName>
+         <shortdesc>
+	 The types of updates that a user or a contact can make to their BBM profile.</shortdesc>
+         <prolog>
+            <asMetadata/>
+            <asCustoms>
+               <bbtags>
+                  <version>10.2</version>
+                  <foundin>BBM.ane</foundin>
+               </bbtags>
+            </asCustoms>
+         </prolog>
+            <meta name="keywords"
+               content="BBMContactUpdateTypes,net.rim.bbm.BBMContactUpdateTypes,ASYNC,AVAILABLE,BUSY,DISPLAY_NAME,DISPLAY_PICTURE,FAILURE,INSTALL_APP,PERSONAL_MESSAGE,STATUS,SUCCESS,UNINSTALL_APP,appVersion,appVersion,bbmManager,contacts,cookie,displayName,displayName,iconId,iconUrl,id,id,id,personalMessage,personalMessage,personalStatus,personalStatus,profileBoxItems,profileUrl,profileUrl,status,status,text,version"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 The types of updates that a user or a contact can make to their BBM profile.
+	 <p>
+	 Update types are used to determine which property was updated when a <codeph>BBMContactEvent</codeph> event is dispatched.
+	 </p>
+	           </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="Object"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+         <related-links>
+            <link href="net.rim.events.xml#BBMContactEvent/updateType">
+               <linktext>net.rim.events.BBMContactEvent.updateType</linktext>
+            </link>
+         </related-links>
+      </apiClassifier>
+      <apiClassifier id="net.rim.bbm:BBMUserProfile">
+         <apiName>BBMUserProfile</apiName>
+         <shortdesc>
+	 Represents the device User in the BBM Social Platform.</shortdesc>
+         <prolog>
+            <asMetadata/>
+            <asCustoms>
+               <bbtags>
+                  <version>10.2</version>
+                  <foundin>BBM.ane</foundin>
+               </bbtags>
+            </asCustoms>
+         </prolog>
+            <meta name="keywords"
+               content="BBMUserProfile,net.rim.bbm.BBMUserProfile,ASYNC,AVAILABLE,BUSY,DISPLAY_NAME,DISPLAY_PICTURE,FAILURE,INSTALL_APP,PERSONAL_MESSAGE,STATUS,SUCCESS,UNINSTALL_APP,appVersion,appVersion,bbmManager,contacts,cookie,displayName,displayName,iconId,iconUrl,id,id,id,personalMessage,personalMessage,personalStatus,personalStatus,profileBoxItems,profileUrl,profileUrl,status,status,text,version,addProfileBoxItem,canSendBBMInvite,canShowProfileBox,getUserProfile,isAccessAllowed,registerApplication,registerIcon,removeAllProfileBoxItems,removeProfileBoxItem,retrieveIcon,sendDownloadInvitation,setPersonalMessage,setProfileUrl,setStatus"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 Represents the device User in the BBM Social Platform.
+	 <p>
+	                 <codeph>BBMUserProfile</codeph> is a class that represents the device user in the BBM Social Platform. 
+	 The class provides getters and setters to attributes of the device User.
+	 </p>
+	           </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="Object"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+         <related-links>
+            <link href="net.rim.bbm.xml#BBMManager/getUserProfile()">
+               <linktext>BBMManager.getUserProfile()</linktext>
+            </link>
+         </related-links>
+      </apiClassifier>
+      <apiClassifier id="net.rim.bbm:BBMContact">
+         <apiName>BBMContact</apiName>
+         <shortdesc>
+	 Represents a contact in the BBM Social Platform.</shortdesc>
+         <prolog>
+            <asMetadata/>
+            <asCustoms>
+               <bbtags>
+                  <version>10.2</version>
+                  <foundin>BBM.ane</foundin>
+               </bbtags>
+            </asCustoms>
+         </prolog>
+            <meta name="keywords"
+               content="BBMContact,net.rim.bbm.BBMContact,ASYNC,AVAILABLE,BUSY,DISPLAY_NAME,DISPLAY_PICTURE,FAILURE,INSTALL_APP,PERSONAL_MESSAGE,STATUS,SUCCESS,UNINSTALL_APP,appVersion,appVersion,bbmManager,contacts,cookie,displayName,displayName,iconId,iconUrl,id,id,id,personalMessage,personalMessage,personalStatus,personalStatus,profileBoxItems,profileUrl,profileUrl,status,status,text,version"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 Represents a contact in the BBM Social Platform.
+	 <p>
+	                 <codeph>BBMContact</codeph> is a class that represents a contact accessible through the BBM Social Platform. 
+	 The class provides accessor methods to the main attributes of the contact including display name, message and status.
+	 </p>
+	           </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="Object"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+         <related-links>
+            <link href="net.rim.bbm.xml#BBMManager/contacts">
+               <linktext>BBMManager.contacts</linktext>
+            </link>
+         </related-links>
+      </apiClassifier>
+      <apiClassifier id="net.rim.bbm:BBMManager">
+         <apiName>BBMManager</apiName>
+         <shortdesc>
+	 The BBMManager class is used to interact with the BBM Social Platform.</shortdesc>
+         <prolog>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="BBMManager,net.rim.bbm.BBMManager,ASYNC,AVAILABLE,BUSY,DISPLAY_NAME,DISPLAY_PICTURE,FAILURE,INSTALL_APP,PERSONAL_MESSAGE,STATUS,SUCCESS,UNINSTALL_APP,appVersion,appVersion,bbmManager,contacts,cookie,displayName,displayName,iconId,iconUrl,id,id,id,personalMessage,personalMessage,personalStatus,personalStatus,profileBoxItems,profileUrl,profileUrl,status,status,text,version,addProfileBoxItem,canSendBBMInvite,canShowProfileBox,getUserProfile,isAccessAllowed,registerApplication,registerIcon,removeAllProfileBoxItems,removeProfileBoxItem,retrieveIcon,sendDownloadInvitation,setPersonalMessage,setProfileUrl,setStatus"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>flash.events:EventDispatcher</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 The <codeph>BBMManager</codeph> class is used to interact with the BBM Social Platform.
+	 <p>
+	 For example, you can:
+	 <ul>
+	                    <li>Invite BBM contacts to download your app by accessing a user's BBM contact list.</li>
+	                    <li>Update a user's BBM personal message, status, and avatar.</li>
+	                    <li>Add a customizable application box to a user's BBM profile to broadcast achievements or provide updates.</li>
+	                 </ul>
+	              </p>
+	              <p>
+	 Applications wishing to use the <codeph>BBMManager</codeph> must ensure that their application includes the following permission in their bar-descriptor.xml file.
+	 
+	 <b>&lt;permission&gt;bbm_connect&lt;/permission&gt;</b>
+	              </p>
+	              <p>
+	 Connecting to the BBM Social Platform starts with registering your app. 
+	 The BBM Social Platform APIs are not generally available for use until the app is registered. 
+	 Successful registration is indicated when <codeph>BBMRegisterEvent.SUCCESS</codeph> event is recieved.
+	 </p>
+	           </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="flash.events:EventDispatcher"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+         <related-links>
+            <link href="net.rim.bbm.xml#BBMManager/registerApplication()">
+               <linktext>registerApplication()</linktext>
+            </link>
+         </related-links>
+      </apiClassifier>
+      <apiClassifier id="net.rim.bbm:BBMProfileBoxItem">
+         <apiName>BBMProfileBoxItem</apiName>
+         <shortdesc>
+	 Represents a profile box item in the BBM Social Platform.</shortdesc>
+         <prolog>
+            <asMetadata/>
+            <asCustoms>
+               <bbtags>
+                  <version>10.2</version>
+                  <foundin>BBM.ane</foundin>
+               </bbtags>
+            </asCustoms>
+         </prolog>
+            <meta name="keywords"
+               content="BBMProfileBoxItem,net.rim.bbm.BBMProfileBoxItem,ASYNC,AVAILABLE,BUSY,DISPLAY_NAME,DISPLAY_PICTURE,FAILURE,INSTALL_APP,PERSONAL_MESSAGE,STATUS,SUCCESS,UNINSTALL_APP,appVersion,appVersion,bbmManager,contacts,cookie,displayName,displayName,iconId,iconUrl,id,id,id,personalMessage,personalMessage,personalStatus,personalStatus,profileBoxItems,profileUrl,profileUrl,status,status,text,version,addProfileBoxItem,canSendBBMInvite,canShowProfileBox,getUserProfile,isAccessAllowed,registerApplication,registerIcon,removeAllProfileBoxItems,removeProfileBoxItem,retrieveIcon,sendDownloadInvitation,setPersonalMessage,setProfileUrl,setStatus"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>flash.events:EventDispatcher</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 Represents a profile box item in the BBM Social Platform.
+	 <p>
+	                 <codeph>BBMProfileBoxItem</codeph> is a class that represents a profile box item accessible through the BBM Social Platform. 
+	 The class provides accessor methods to the main attributes of the ProfileBoxItem including cookie, id, iconId and text.
+	 </p>
+	           </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="flash.events:EventDispatcher"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+         <related-links>
+            <link href="net.rim.bbm.xml#BBMManager/profileBoxItems">
+               <linktext>BBMManager.profileBoxItems</linktext>
+            </link>
+         </related-links>
+      </apiClassifier>
+      <apiClassifier id="net.rim.bbm:BBMContactStatus">
+         <apiName>BBMContactStatus</apiName>
+         <shortdesc>
+	 Represents the status of the device User or a BBMContact.</shortdesc>
+         <prolog>
+            <asMetadata/>
+            <asCustoms>
+               <bbtags>
+                  <version>10.2</version>
+                  <foundin>BBM.ane</foundin>
+	              </bbtags>
+            </asCustoms>
+         </prolog>
+            <meta name="keywords"
+               content="BBMContactStatus,net.rim.bbm.BBMContactStatus,ASYNC,AVAILABLE,BUSY,DISPLAY_NAME,DISPLAY_PICTURE,FAILURE,INSTALL_APP,PERSONAL_MESSAGE,STATUS,SUCCESS,UNINSTALL_APP,appVersion,appVersion,bbmManager,contacts,cookie,displayName,displayName,iconId,iconUrl,id,id,id,personalMessage,personalMessage,personalStatus,personalStatus,profileBoxItems,profileUrl,profileUrl,status,status,text,version"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 Represents the status of the device User or a <codeph>BBMContact</codeph>.
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="Object"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+         <related-links>
+            <link href="net.rim.bbm.xml#BBMContact/status">
+               <linktext>BBMContact.status</linktext>
+            </link>
+            <link href="net.rim.bbm.xml#BBMUserProfile/status">
+               <linktext>BBMUserProfile.status</linktext>
+            </link>
+         </related-links>
+      </apiClassifier>
+      <apiClassifier id="net.rim.bbm:BBMResult">
+         <apiName>BBMResult</apiName>
+         <shortdesc>
+	 Result codes that can be returned by a function.</shortdesc>
+         <prolog>
+            <asMetadata/>
+            <asCustoms>
+               <bbtags>
+                  <version>10.2</version>
+                  <foundin>BBM.ane</foundin>
+	              </bbtags>
+            </asCustoms>
+         </prolog>
+            <meta name="keywords"
+               content="BBMResult,net.rim.bbm.BBMResult,ASYNC,AVAILABLE,BUSY,DISPLAY_NAME,DISPLAY_PICTURE,FAILURE,INSTALL_APP,PERSONAL_MESSAGE,STATUS,SUCCESS,UNINSTALL_APP,appVersion,appVersion,bbmManager,contacts,cookie,displayName,displayName,iconId,iconUrl,id,id,id,personalMessage,personalMessage,personalStatus,personalStatus,profileBoxItems,profileUrl,profileUrl,status,status,text,version"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 Result codes that can be returned by a function.
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="Object"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="net.rim.events">
+      <apiName>net.rim.events</apiName>
+      <apiDetail/>
+      <apiClassifier id="net.rim.events:BBMUserProfileEvent">
+         <apiName>BBMUserProfileEvent</apiName>
+         <shortdesc>
+	 BBMUserProfileEvent events are dispatched by the BBMManager class when the users profile is updated.</shortdesc>
+         <prolog>
+            <asMetadata/>
+            <asCustoms>
+               <bbtags>
+                  <version>10.2</version>
+                  <foundin>BBM.ane</foundin>
+	              </bbtags>
+            </asCustoms>
+         </prolog>
+            <meta name="keywords"
+               content="BBMUserProfileEvent,net.rim.events.BBMUserProfileEvent,CONTACT_LIST,CONTACT_UPDATE,DENIED,PENDING,SUCCESS,UNREGISTERED,UPDATE,contact,updateType,updateType"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>flash.events:Event</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	              <codeph>BBMUserProfileEvent</codeph> events are dispatched by the <codeph>BBMManager</codeph> class when the users profile is updated.
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="flash.events:Event"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+      <apiClassifier id="net.rim.events:BBMRegisterEvent">
+         <apiName>BBMRegisterEvent</apiName>
+         <shortdesc>
+	 BBMRegisterEvent events are dispatched by the BBMManager class when registration events occur.</shortdesc>
+         <prolog>
+            <asMetadata/>
+            <asCustoms>
+               <bbtags>
+                  <version>10.2</version>
+                  <foundin>BBM.ane</foundin>
+               </bbtags>
+            </asCustoms>
+         </prolog>
+            <meta name="keywords"
+               content="BBMRegisterEvent,net.rim.events.BBMRegisterEvent,CONTACT_LIST,CONTACT_UPDATE,DENIED,PENDING,SUCCESS,UNREGISTERED,UPDATE,contact,updateType,updateType"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>flash.events:Event</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	              <codeph>BBMRegisterEvent</codeph> events are dispatched by the <codeph>BBMManager</codeph> class when registration events occur.
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="flash.events:Event"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+         <related-links>
+            <link href="net.rim.bbm.xml#BBMManager">
+               <linktext>BBMManager</linktext>
+            </link>
+         </related-links>
+      </apiClassifier>
+      <apiClassifier id="net.rim.events:BBMContactEvent">
+         <apiName>BBMContactEvent</apiName>
+         <shortdesc>
+	 BBMContactEvent events are dispatched by the BBMManager class when contacts are updated.</shortdesc>
+         <prolog>
+            <asMetadata/>
+            <asCustoms>
+               <bbtags>
+                  <version>10.2</version>
+                  <foundin>BBM.ane</foundin>
+	              </bbtags>
+            </asCustoms>
+         </prolog>
+            <meta name="keywords"
+               content="BBMContactEvent,net.rim.events.BBMContactEvent,CONTACT_LIST,CONTACT_UPDATE,DENIED,PENDING,SUCCESS,UNREGISTERED,UPDATE,contact,updateType,updateType"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>flash.events:Event</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	              <codeph>BBMContactEvent</codeph> events are dispatched by the <codeph>BBMManager</codeph> class when contacts are updated.
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="flash.events:Event"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+</allClasses>

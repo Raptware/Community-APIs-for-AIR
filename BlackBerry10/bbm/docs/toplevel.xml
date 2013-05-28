@@ -1,0 +1,1195 @@
+<asdoc>
+
+<classRec name='BBMContactUpdateTypes' fullname='net.rim.bbm:BBMContactUpdateTypes' sourcefile='/Users/jdolce/Projects/github.rim.com/bbm/ane/as3/src/net/rim/bbm/BBMContactUpdateTypes.as' namespace='net.rim.bbm' access='public' baseclass='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 The types of updates that a user or a contact can make to their BBM profile.
+	 <p>
+	 Update types are used to determine which property was updated when a <code>BBMContactEvent</code> event is dispatched.
+	 </p>
+	 ]]></description>
+<see><![CDATA[net.rim.events.BBMContactEvent#updateType
+	 ]]></see>
+<bbtags><![CDATA[<version>10.2</version>
+     <foundin>BBM.ane</foundin>
+     ]]></bbtags>
+</classRec>
+<field name='DISPLAY_NAME' fullname='net.rim.bbm:BBMContactUpdateTypes/DISPLAY_NAME' type='int' isStatic='true' isConst='true' defaultValue='unknown' >
+<description><![CDATA[
+		  Indicates that the display name has changed.
+		 ]]></description>
+</field>
+<field name='DISPLAY_PICTURE' fullname='net.rim.bbm:BBMContactUpdateTypes/DISPLAY_PICTURE' type='int' isStatic='true' isConst='true' defaultValue='unknown' >
+<description><![CDATA[
+		 Indicates that the display picture has changed.
+		 ]]></description>
+</field>
+<field name='INSTALL_APP' fullname='net.rim.bbm:BBMContactUpdateTypes/INSTALL_APP' type='int' isStatic='true' isConst='true' defaultValue='unknown' >
+<description><![CDATA[
+		 Indicates that your app was installed/enabled.
+		 ]]></description>
+</field>
+<field name='PERSONAL_MESSAGE' fullname='net.rim.bbm:BBMContactUpdateTypes/PERSONAL_MESSAGE' type='int' isStatic='true' isConst='true' defaultValue='unknown' >
+<description><![CDATA[
+		 Indicates that the personal message has changed.
+		 ]]></description>
+</field>
+<field name='STATUS' fullname='net.rim.bbm:BBMContactUpdateTypes/STATUS' type='int' isStatic='true' isConst='true' defaultValue='unknown' >
+<description><![CDATA[
+		 Indicates that the status has changed.
+		 ]]></description>
+</field>
+<field name='UNINSTALL_APP' fullname='net.rim.bbm:BBMContactUpdateTypes/UNINSTALL_APP' type='int' isStatic='true' isConst='true' defaultValue='unknown' >
+<description><![CDATA[
+		 Indicates that your app was uninstalled/disabled.
+		 ]]></description>
+</field>
+<classRec name='BBMResult' fullname='net.rim.bbm:BBMResult' sourcefile='/Users/jdolce/Projects/github.rim.com/bbm/ane/as3/src/net/rim/bbm/BBMResult.as' namespace='net.rim.bbm' access='public' baseclass='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Result codes that can be returned by a function.
+	 ]]></description>
+<bbtags><![CDATA[<version>10.2</version>
+     <foundin>BBM.ane</foundin>
+	 ]]></bbtags>
+</classRec>
+<field name='ASYNC' fullname='net.rim.bbm:BBMResult/ASYNC' type='int' isStatic='true' isConst='true' defaultValue='1' >
+<description><![CDATA[
+		Indicates that an operation will be completed asynchronously.
+		]]></description>
+</field>
+<field name='FAILURE' fullname='net.rim.bbm:BBMResult/FAILURE' type='int' isStatic='true' isConst='true' defaultValue='-1' >
+<description><![CDATA[
+		 Indicates that a function did not complete successfully.
+		]]></description>
+</field>
+<field name='SUCCESS' fullname='net.rim.bbm:BBMResult/SUCCESS' type='int' isStatic='true' isConst='true' defaultValue='0' >
+<description><![CDATA[
+		Indicates that a function has completed successfully.
+		]]></description>
+</field>
+<classRec name='BBMContactStatus' fullname='net.rim.bbm:BBMContactStatus' sourcefile='/Users/jdolce/Projects/github.rim.com/bbm/ane/as3/src/net/rim/bbm/BBMContactStatus.as' namespace='net.rim.bbm' access='public' baseclass='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Represents the status of the device User or a <code>BBMContact</code>.
+	 ]]></description>
+<see><![CDATA[BBMContact#status
+	 ]]></see>
+<see><![CDATA[BBMUserProfile#status
+	 ]]></see>
+<bbtags><![CDATA[<version>10.2</version>
+     <foundin>BBM.ane</foundin>
+	 ]]></bbtags>
+</classRec>
+<field name='AVAILABLE' fullname='net.rim.bbm:BBMContactStatus/AVAILABLE' type='int' isStatic='true' isConst='true' defaultValue='0' >
+<description><![CDATA[
+		 User status that indicates that the user is available.
+		 ]]></description>
+</field>
+<field name='BUSY' fullname='net.rim.bbm:BBMContactStatus/BUSY' type='int' isStatic='true' isConst='true' defaultValue='1' >
+<description><![CDATA[
+		 User status that indicates that the user is busy.
+		 ]]></description>
+</field>
+<classRec name='BBMContact' fullname='net.rim.bbm:BBMContact' sourcefile='/Users/jdolce/Projects/github.rim.com/bbm/ane/as3/src/net/rim/bbm/BBMContact.as' namespace='net.rim.bbm' access='public' baseclass='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Represents a contact in the BBM Social Platform.
+	 <p>
+	 <code>BBMContact</code> is a class that represents a contact accessible through the BBM Social Platform. 
+	 The class provides accessor methods to the main attributes of the contact including display name, message and status.
+	 </p>
+	 ]]></description>
+<see><![CDATA[BBMManager#contacts
+	 ]]></see>
+<bbtags><![CDATA[<version>10.2</version>
+     <foundin>BBM.ane</foundin>
+     ]]></bbtags>
+</classRec>
+<method name='BBMContact' fullname='net.rim.bbm:BBMContact/BBMContact' isStatic='false' isFinal='false' isOverride='false'  param_names='id;name;message;statusMessage;appVersion;status;profileurl' param_types='String;String;String;String;String;int;String' param_defaults='undefined;undefined;undefined;undefined;undefined;undefined;null' result_type='*'>
+<description><![CDATA[
+		 Creates a <code>BBMContact</code> instance.
+		 <p>
+		 <code>BBMContact</code> instances are created by the <code>BBMManager</code> class and should not be directly instaniated.
+		 </p>
+		 ]]></description>
+<param><![CDATA[id The id of the contact.
+		 ]]></param>
+<param><![CDATA[name The name of the contact.
+		 ]]></param>
+<param><![CDATA[message The message of the contact.
+		 ]]></param>
+<param><![CDATA[statusMessage The status message of the contact.
+		 ]]></param>
+<param><![CDATA[appVersion The app version the contact has installed.
+		 ]]></param>
+<param><![CDATA[status The status of the contact.
+		 ]]></param>
+<param><![CDATA[profileurl The url for the profile image of the contact.
+		 ]]></param>
+</method>
+<method name='setAppVersion' fullname='net.rim.bbm:BBMContact/bbm_internal:setAppVersion' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[ ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='setDisplayName' fullname='net.rim.bbm:BBMContact/bbm_internal:setDisplayName' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[ ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='setPersonalMessage' fullname='net.rim.bbm:BBMContact/bbm_internal:setPersonalMessage' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[ ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='setPersonalStatus' fullname='net.rim.bbm:BBMContact/bbm_internal:setPersonalStatus' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[ ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='setProfileUrl' fullname='net.rim.bbm:BBMContact/bbm_internal:setProfileUrl' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[ ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='setStatus' fullname='net.rim.bbm:BBMContact/bbm_internal:setStatus' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='int' param_defaults='undefined' result_type='void'>
+<description><![CDATA[ ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='toString' fullname='net.rim.bbm:BBMContact/toString' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[ ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='appVersion' fullname='net.rim.bbm:BBMContact/appVersion/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 Retrieve a contact's version of the app that they have installed.
+		 ]]></description>
+</method>
+<method name='displayName' fullname='net.rim.bbm:BBMContact/displayName/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 Retrieve a contact's display name.
+		 ]]></description>
+</method>
+<method name='id' fullname='net.rim.bbm:BBMContact/id/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 Retrieve a contact's id.
+		 <p>
+		 The user's PPID is the same across multiple instances of BBM (for
+ 		 example, on a BlackBerry smartphone and a BlackBerry tablet), when the user
+ 		 signs in with the same BlackBerry ID. The ID is encoded as a Base64 string
+ 		 using the ASCII character set.
+		 </p>
+		 ]]></description>
+</method>
+<method name='personalMessage' fullname='net.rim.bbm:BBMContact/personalMessage/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 Retrieve a contact's personal message.
+		 ]]></description>
+</method>
+<method name='personalStatus' fullname='net.rim.bbm:BBMContact/personalStatus/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 
+		 Retrieve a contact's status message.
+		 ]]></description>
+</method>
+<method name='profileUrl' fullname='net.rim.bbm:BBMContact/profileUrl/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 Retrieve the url for a contact's profile image.
+		 ]]></description>
+</method>
+<method name='status' fullname='net.rim.bbm:BBMContact/status/get' isStatic='false' isFinal='false' isOverride='false'  result_type='int'>
+<description><![CDATA[
+		 Retrieve a contact's status.
+		 <p>
+		 Valid values can be found in the <code>BBMContactStatus</code> class.
+		 </p>
+		 ]]></description>
+<see><![CDATA[BBMContactStatus
+		 ]]></see>
+</method>
+<field name='__appVersion' fullname='net.rim.bbm:BBMContact/private:__appVersion' type='String' isStatic='false' isConst='false' >
+</field>
+<field name='__id' fullname='net.rim.bbm:BBMContact/private:__id' type='String' isStatic='false' isConst='false' >
+</field>
+<field name='__message' fullname='net.rim.bbm:BBMContact/private:__message' type='String' isStatic='false' isConst='false' >
+</field>
+<field name='__name' fullname='net.rim.bbm:BBMContact/private:__name' type='String' isStatic='false' isConst='false' >
+</field>
+<field name='__profileurl' fullname='net.rim.bbm:BBMContact/private:__profileurl' type='String' isStatic='false' isConst='false' >
+</field>
+<field name='__statusMessage' fullname='net.rim.bbm:BBMContact/private:__statusMessage' type='String' isStatic='false' isConst='false' >
+</field>
+<field name='__status' fullname='net.rim.bbm:BBMContact/private:__status' type='int' isStatic='false' isConst='false' >
+</field>
+<classRec name='BBMProfileBoxItem' fullname='net.rim.bbm:BBMProfileBoxItem' sourcefile='/Users/jdolce/Projects/github.rim.com/bbm/ane/as3/src/net/rim/bbm/BBMProfileBoxItem.as' namespace='net.rim.bbm' access='public' baseclass='flash.events:EventDispatcher' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Represents a profile box item in the BBM Social Platform.
+	 <p>
+	 <code>BBMProfileBoxItem</code> is a class that represents a profile box item accessible through the BBM Social Platform. 
+	 The class provides accessor methods to the main attributes of the ProfileBoxItem including cookie, id, iconId and text.
+	 </p>
+	 ]]></description>
+<see><![CDATA[BBMManager#profileBoxItems
+	 ]]></see>
+<bbtags><![CDATA[<version>10.2</version>
+     <foundin>BBM.ane</foundin>
+     ]]></bbtags>
+</classRec>
+<method name='BBMProfileBoxItem' fullname='net.rim.bbm:BBMProfileBoxItem/BBMProfileBoxItem' isStatic='false' isFinal='false' isOverride='false'  param_names='id;text;cookie;iconId;iconUrl' param_types='String;String;String;int;String' param_defaults='undefined;undefined;undefined;undefined;null' result_type='*'>
+<description><![CDATA[
+		 Creates a <code>BBMProfileBoxItem</code> instance.
+		 <p>
+		 <code>BBMProfileBoxItem</code> instances are created by the <code>BBMManager</code> class and should not be directly instaniated.
+		 </p>
+		 ]]></description>
+<param><![CDATA[id The id of the item.
+		 ]]></param>
+<param><![CDATA[text The text of the item.
+		 ]]></param>
+<param><![CDATA[cookie The cookie of the item.
+		 ]]></param>
+<param><![CDATA[iconId The icon id of the item.
+		 ]]></param>
+<param><![CDATA[iconUrl The url of the icon.
+		 ]]></param>
+</method>
+<method name='retrieveIcon' fullname='net.rim.bbm:BBMProfileBoxItem/retrieveIcon' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+		 Retrieves the icon from the BBM Social Platform.
+		 <p>
+		 Retrieving the icon occurs asynchronously and once completed the <code>iconUrl</code> property is updated.
+		 </p>
+		 ]]></description>
+</method>
+<method name='setIconUrl' fullname='net.rim.bbm:BBMProfileBoxItem/bbm_internal:setIconUrl' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[ ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='cookie' fullname='net.rim.bbm:BBMProfileBoxItem/cookie/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 Retrieve the cookie of the item.
+		 ]]></description>
+</method>
+<method name='iconId' fullname='net.rim.bbm:BBMProfileBoxItem/iconId/get' isStatic='false' isFinal='false' isOverride='false'  result_type='int'>
+<description><![CDATA[
+		 Retrieve the icon id of the item.
+		 ]]></description>
+</method>
+<method name='iconUrl' fullname='net.rim.bbm:BBMProfileBoxItem/iconUrl/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 Retrieve the url for the icon of the item.
+		 <p>
+		 If <code>null</code>, application developers should call the<code>retrieveIcon()</code>
+		 icon method in order to get the url to the icon. When the icon url is retrieved, this property
+		 is automatically updated with the url. 
+		 </p>
+		 ]]></description>
+</method>
+<method name='id' fullname='net.rim.bbm:BBMProfileBoxItem/id/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 Retrieve the id of the item.
+		 ]]></description>
+</method>
+<method name='text' fullname='net.rim.bbm:BBMProfileBoxItem/text/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 Retrieve the text of the item.
+		 ]]></description>
+</method>
+<field name='__cookie' fullname='net.rim.bbm:BBMProfileBoxItem/private:__cookie' type='String' isStatic='false' isConst='false' >
+</field>
+<field name='__iconId' fullname='net.rim.bbm:BBMProfileBoxItem/private:__iconId' type='int' isStatic='false' isConst='false' >
+</field>
+<field name='__iconUrl' fullname='net.rim.bbm:BBMProfileBoxItem/private:__iconUrl' type='String' isStatic='false' isConst='false' >
+</field>
+<field name='__id' fullname='net.rim.bbm:BBMProfileBoxItem/private:__id' type='String' isStatic='false' isConst='false' >
+</field>
+<field name='__text' fullname='net.rim.bbm:BBMProfileBoxItem/private:__text' type='String' isStatic='false' isConst='false' >
+</field>
+<classRec name='BBMUserProfile' fullname='net.rim.bbm:BBMUserProfile' sourcefile='/Users/jdolce/Projects/github.rim.com/bbm/ane/as3/src/net/rim/bbm/BBMUserProfile.as' namespace='net.rim.bbm' access='public' baseclass='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Represents the device User in the BBM Social Platform.
+	 <p>
+	 <code>BBMUserProfile</code> is a class that represents the device user in the BBM Social Platform. 
+	 The class provides getters and setters to attributes of the device User.
+	 </p>
+	 ]]></description>
+<see><![CDATA[BBMManager#getUserProfile()
+	 ]]></see>
+<bbtags><![CDATA[<version>10.2</version>
+     <foundin>BBM.ane</foundin>
+     ]]></bbtags>
+</classRec>
+<method name='$setAppVersion' fullname='net.rim.bbm:BBMUserProfile/bbm_internal:$setAppVersion' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[ ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='$setDisplayName' fullname='net.rim.bbm:BBMUserProfile/bbm_internal:$setDisplayName' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[ ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='$setPersonalMessage' fullname='net.rim.bbm:BBMUserProfile/bbm_internal:$setPersonalMessage' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[ ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='$setPersonalStatus' fullname='net.rim.bbm:BBMUserProfile/bbm_internal:$setPersonalStatus' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[ ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='$setProfileUrl' fullname='net.rim.bbm:BBMUserProfile/bbm_internal:$setProfileUrl' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[ ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='$setStatus' fullname='net.rim.bbm:BBMUserProfile/bbm_internal:$setStatus' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='int' param_defaults='undefined' result_type='void'>
+<description><![CDATA[ ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='BBMUserProfile' fullname='net.rim.bbm:BBMUserProfile/BBMUserProfile' isStatic='false' isFinal='false' isOverride='false'  param_names='id;name;message;statusMessage;appVersion;status;profileurl' param_types='String;String;String;String;String;int;String' param_defaults='undefined;undefined;undefined;undefined;undefined;undefined;null' result_type='*'>
+<description><![CDATA[
+		 Creates a <code>BBMUserProfile</code> instance.
+		 <p>
+		 <code>BBMUserProfile</code> instances are created by the <code>BBMManager</code> class and should not be directly instaniated.
+		 </p>
+		 ]]></description>
+<param><![CDATA[id The id of the user.
+		 ]]></param>
+<param><![CDATA[name The name of the user.
+		 ]]></param>
+<param><![CDATA[message The message of the user.
+		 ]]></param>
+<param><![CDATA[statusMessage The status message of the user.
+		 ]]></param>
+<param><![CDATA[appVersion The app version the user has installed.
+		 ]]></param>
+<param><![CDATA[status The status of the user.
+		 ]]></param>
+<param><![CDATA[profileurl The url for the profile image of the user.
+		 ]]></param>
+</method>
+<method name='setPersonalMessage' fullname='net.rim.bbm:BBMUserProfile/setPersonalMessage' isStatic='false' isFinal='false' isOverride='false'  param_names='message' param_types='String' param_defaults='undefined' result_type='int'>
+<description><![CDATA[
+		 Set the personal message of the user.
+		 <p>
+		 When setting the personal message a dialog displays to allow the
+ 		 user to accept or reject the change. A personal message is limited to 160
+ 		 characters; anything longer is truncated. If <code>null</code> is passed in, the personal
+ 		 message is cleared.
+		 </p>
+		 ]]></description>
+<param><![CDATA[message The message to set.
+		 ]]></param>
+<return><![CDATA[Returns <code>BBMResult.ASYNC</code> if successful in sending the request, otherwise <code>BBMResult.FAILURE</code>.
+		 ]]></return>
+</method>
+<method name='setProfileUrl' fullname='net.rim.bbm:BBMUserProfile/setProfileUrl' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='String' param_defaults='undefined' result_type='int'>
+<description><![CDATA[
+		 Sets the url of the profile image for the user.
+		 <p>
+		 When setting the profile url, the image is uploaded to the BBM Social Platform servers.
+		 A dialog displays to allow the user to accept or reject the change
+ 		 to the user's BBM display picture. The display picture is limited to 32kB of
+ 		 data; an attempt to set a display picture that exceeds this limit will fail
+ 		 and will not display the dialog.
+		 </p>
+		 ]]></description>
+<return><![CDATA[Returns <code>BBMResult.ASYNC</code> if successful in sending the request, otherwise <code>BBMResult.FAILURE</code>. 
+		 ]]></return>
+</method>
+<method name='setStatus' fullname='net.rim.bbm:BBMUserProfile/setStatus' isStatic='false' isFinal='false' isOverride='false'  param_names='status;message' param_types='int;String' param_defaults='undefined;undefined' result_type='int'>
+<description><![CDATA[
+		 Sets the status of the user.
+		 ]]></description>
+<param><![CDATA[status The status of the user. Valid values can be found in the <code>BBMContactStatus</code> class.
+		 ]]></param>
+<param><![CDATA[message The personal status of the user.
+		 ]]></param>
+<return><![CDATA[Returns <code>BBMResult.ASYNC</code> if successful in sending the request, otherwise <code>BBMResult.FAILURE</code>.
+		 ]]></return>
+</method>
+<method name='appVersion' fullname='net.rim.bbm:BBMUserProfile/appVersion/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 Gets the version of the application installed.
+		 ]]></description>
+</method>
+<method name='displayName' fullname='net.rim.bbm:BBMUserProfile/displayName/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 Get the display name of the user.
+		 ]]></description>
+</method>
+<method name='id' fullname='net.rim.bbm:BBMUserProfile/id/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 Get the id of the user.
+		 ]]></description>
+</method>
+<method name='personalMessage' fullname='net.rim.bbm:BBMUserProfile/personalMessage/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 Get the personal message of the user.
+		 ]]></description>
+</method>
+<method name='personalStatus' fullname='net.rim.bbm:BBMUserProfile/personalStatus/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 Get or set the personal status of the user.
+		 ]]></description>
+</method>
+<method name='profileUrl' fullname='net.rim.bbm:BBMUserProfile/profileUrl/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 Gets the url of the profile image for the user.
+		 ]]></description>
+</method>
+<method name='status' fullname='net.rim.bbm:BBMUserProfile/status/get' isStatic='false' isFinal='false' isOverride='false'  result_type='int'>
+<description><![CDATA[
+		 Gets or sets the users status.
+		 <p>
+		 Valid values can be found in the <code>BBMContactStatus</code> class.
+		 </p>
+		 ]]></description>
+<see><![CDATA[BBMContactStatus
+		 ]]></see>
+</method>
+<field name='__appVersion' fullname='net.rim.bbm:BBMUserProfile/private:__appVersion' type='String' isStatic='false' isConst='false' >
+</field>
+<field name='__id' fullname='net.rim.bbm:BBMUserProfile/private:__id' type='String' isStatic='false' isConst='false' >
+</field>
+<field name='__message' fullname='net.rim.bbm:BBMUserProfile/private:__message' type='String' isStatic='false' isConst='false' >
+</field>
+<field name='__name' fullname='net.rim.bbm:BBMUserProfile/private:__name' type='String' isStatic='false' isConst='false' >
+</field>
+<field name='__profileurl' fullname='net.rim.bbm:BBMUserProfile/private:__profileurl' type='String' isStatic='false' isConst='false' >
+</field>
+<field name='__statusMessage' fullname='net.rim.bbm:BBMUserProfile/private:__statusMessage' type='String' isStatic='false' isConst='false' >
+</field>
+<field name='__status' fullname='net.rim.bbm:BBMUserProfile/private:__status' type='int' isStatic='false' isConst='false' >
+</field>
+<classRec name='BBMManager' fullname='net.rim.bbm:BBMManager' sourcefile='/Users/jdolce/Projects/github.rim.com/bbm/ane/as3/src/net/rim/bbm/BBMManager.as' namespace='net.rim.bbm' access='public' baseclass='flash.events:EventDispatcher' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 The <code>BBMManager</code> class is used to interact with the BBM Social Platform.
+	 <p>
+	 For example, you can:
+	 <ul>
+	 <li>Invite BBM contacts to download your app by accessing a user's BBM contact list.</li>
+	 <li>Update a user's BBM personal message, status, and avatar.</li>
+	 <li>Add a customizable application box to a user's BBM profile to broadcast achievements or provide updates.</li>
+	 </ul>
+	 </p>
+	 <p>
+	 Applications wishing to use the <code>BBMManager</code> must ensure that their application includes the following permission in their bar-descriptor.xml file.
+	 <br>
+	 <b>&lt;permission&gt;bbm_connect&lt;/permission&gt;</b>
+	 </p>
+	 <p>
+	 Connecting to the BBM Social Platform starts with registering your app. 
+	 The BBM Social Platform APIs are not generally available for use until the app is registered. 
+	 Successful registration is indicated when <code>BBMRegisterEvent.SUCCESS</code> event is recieved.
+	 </p>
+	 ]]></description>
+<see><![CDATA[#registerApplication()
+	 ]]></see>
+<metadata>
+	<Event owner='net.rim.bbm:BBMManager' name='userProfileUpdate' type='net.rim.events.BBMUserProfileEvent' >
+<description><![CDATA[
+	 Dispatched when the user profile is updated.
+	 ]]></description>
+<eventType><![CDATA[net.rim.events.BBMUserProfileEvent
+	 ]]></eventType>
+	</Event>
+</metadata>
+<metadata>
+	<Event owner='net.rim.bbm:BBMManager' name='register_denied' type='net.rim.events.BBMRegisterEvent' >
+<description><![CDATA[
+	 Dispatched when access to the BBM Social Platform is denied.
+	 <p>This is usually the result of the user turning off BBM in the application permissions.</p>
+	 ]]></description>
+<eventType><![CDATA[net.rim.events.BBMRegisterEvent
+	 ]]></eventType>
+	</Event>
+</metadata>
+<metadata>
+	<Event owner='net.rim.bbm:BBMManager' name='register_unregistered' type='net.rim.events.BBMRegisterEvent' >
+<description><![CDATA[
+	 Dispatched when the application is not registered with the BBM Social Platform.
+	 ]]></description>
+<eventType><![CDATA[net.rim.events.BBMRegisterEvent
+	 ]]></eventType>
+	</Event>
+</metadata>
+<metadata>
+	<Event owner='net.rim.bbm:BBMManager' name='register_pending' type='net.rim.events.BBMRegisterEvent' >
+<description><![CDATA[
+	 Dispatched when the application is in the process of registering with the BBM Social Platform.
+	 ]]></description>
+<eventType><![CDATA[net.rim.events.BBMRegisterEvent
+	 ]]></eventType>
+	</Event>
+</metadata>
+<metadata>
+	<Event owner='net.rim.bbm:BBMManager' name='register_success' type='net.rim.events.BBMRegisterEvent' >
+<description><![CDATA[
+	 Dispatched when the application has successfully registered with the BBM Social Platform.
+	 ]]></description>
+<eventType><![CDATA[net.rim.events.BBMRegisterEvent
+	 ]]></eventType>
+	</Event>
+</metadata>
+<metadata>
+	<Event owner='net.rim.bbm:BBMManager' name='contact_update' type='net.rim.events.BBMContactEvent' >
+<description><![CDATA[
+	 Dispatched when a contact is updated.
+	 ]]></description>
+<eventType><![CDATA[net.rim.events.BBMContactEvent
+	 ]]></eventType>
+	</Event>
+</metadata>
+<metadata>
+	<Event owner='net.rim.bbm:BBMManager' name='contact_list' type='net.rim.events.BBMContactEvent' >
+<description><![CDATA[
+	 Dispatched when the contact list is retrieved from the BBM Social Platform servers.
+	 ]]></description>
+<eventType><![CDATA[net.rim.events.BBMContactEvent
+	 ]]></eventType>
+	</Event>
+</metadata>
+</classRec>
+<method name='BBMManager' fullname='net.rim.bbm:BBMManager/BBMManager' isStatic='false' isFinal='false' isOverride='false'  param_names='enforcer' param_types='BBMManager.as$17:SingeltonEnforcer' param_defaults='undefined' result_type='*'>
+<description><![CDATA[
+		 Do not call directly.
+		 <p>
+		 Use the <code>BBMManager.bbmManager</code> property to return the singelton instance of this class.
+		 </p>
+		 ]]></description>
+<param><![CDATA[enforcer The singleton enforcer to help prevent accidental instaniation of this class directly.
+		 ]]></param>
+<see><![CDATA[#bbmManager
+		 ]]></see>
+</method>
+<method name='addProfileBoxItem' fullname='net.rim.bbm:BBMManager/addProfileBoxItem' isStatic='false' isFinal='false' isOverride='false'  param_names='text;cookie;iconId' param_types='String;String;int' param_defaults='undefined;null;0' result_type='int'>
+<description><![CDATA[
+		 Add an item to a user's profile box.
+		 <p>
+		 A profile box item consists of an image, text, and a customizable string (cookie).
+		 </p>
+		 ]]></description>
+<param><![CDATA[text The item text must not be null or empty. It can have a maximum of 100 characters,
+ 		 with no more than 2 new line characters.
+ 		 ]]></param>
+<param><![CDATA[cookie The cookie can be null, with a maximum of 128 characters.
+ 		 ]]></param>
+<param><![CDATA[iconId Must be that of a registered image, or &lt; 0 if this item has no image.
+		 ]]></param>
+<see><![CDATA[BBMResult
+		 ]]></see>
+<returns><![CDATA[Returns one of the values defined in <code>BBMResult</code>.
+		 ]]></returns>
+</method>
+<method name='canSendBBMInvite' fullname='net.rim.bbm:BBMManager/canSendBBMInvite' isStatic='false' isFinal='false' isOverride='false'  result_type='Boolean'>
+<description><![CDATA[
+		 Determine whether this user has allowed other users of this application to send this user invitations to become a BBM contact.
+		 <p>
+		 This function will return an accurate value only if you have access
+ 		 to the BBM Social Platform (i.e. if <code>isAccessAllowed()</code> returns <code>true</code>).
+ 		 </p>
+ 		 <p>
+ 		 The user can modify this permission through the global settings application.
+		 </p>
+		 ]]></description>
+</method>
+<method name='canShowProfileBox' fullname='net.rim.bbm:BBMManager/canShowProfileBox' isStatic='false' isFinal='false' isOverride='false'  result_type='Boolean'>
+<description><![CDATA[
+		 Determine whether the user has allowed this application and its application activities to appear in their BBM profile.
+		 <p>
+		 You can use this function to determine whether your profile box is
+ 		 being displayed on the user's profile. This function will return an accurate
+ 		 value only if you have access to the BBM Social Platform (i.e. if
+ 		 <code>isAccessAllowed()</code> returns <code>true</code>).
+ 		 </p>
+ 		 <p>
+		 The user can modify this permission through the global settings application.
+		 </p>
+		 ]]></description>
+<return><![CDATA[Returns <code>true</code> if profile box items can be shown.
+		 ]]></return>
+</method>
+<method name='getImageType' fullname='net.rim.bbm:BBMManager/private:getImageType' isStatic='false' isFinal='false' isOverride='false'  param_names='file' param_types='flash.filesystem:File' param_defaults='undefined' result_type='int'>
+</method>
+<method name='getUserProfile' fullname='net.rim.bbm:BBMManager/getUserProfile' isStatic='false' isFinal='false' isOverride='false'  result_type='net.rim.bbm:BBMUserProfile'>
+<description><![CDATA[
+		 Retrieve the user's BBM profile information.
+		 
+		 ]]></description>
+<return><![CDATA[A instance of <code>BBMUserProfile</code>.
+		 ]]></return>
+<see><![CDATA[BBMUserProfile
+		 ]]></see>
+</method>
+<method name='handleContactEvent' fullname='net.rim.bbm:BBMManager/private:handleContactEvent' isStatic='false' isFinal='false' isOverride='false'  param_names='level' param_types='String' param_defaults='undefined' result_type='void'>
+</method>
+<method name='handleContactUpdateEvent' fullname='net.rim.bbm:BBMManager/private:handleContactUpdateEvent' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+</method>
+<method name='handleProfileBoxEvent' fullname='net.rim.bbm:BBMManager/private:handleProfileBoxEvent' isStatic='false' isFinal='false' isOverride='false'  param_names='level' param_types='String' param_defaults='undefined' result_type='void'>
+</method>
+<method name='handleRegistrationEvent' fullname='net.rim.bbm:BBMManager/private:handleRegistrationEvent' isStatic='false' isFinal='false' isOverride='false'  param_names='level' param_types='String' param_defaults='undefined' result_type='void'>
+</method>
+<method name='handleUserProfileUpdate' fullname='net.rim.bbm:BBMManager/private:handleUserProfileUpdate' isStatic='false' isFinal='false' isOverride='false'  param_names='type;value' param_types='int;String' param_defaults='undefined;undefined' result_type='void'>
+</method>
+<method name='init' fullname='net.rim.bbm:BBMManager/private:init' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+</method>
+<method name='isAccessAllowed' fullname='net.rim.bbm:BBMManager/isAccessAllowed' isStatic='false' isFinal='false' isOverride='false'  result_type='Boolean'>
+<description><![CDATA[
+		 Determine whether access to the BBM Social Platform is allowed.
+		 <p>
+		 Access is not allowed until a successful registration has taken place.
+		 </p>
+		 ]]></description>
+<return><![CDATA[Returns <code>true</code> is access is allowed.
+		 ]]></return>
+</method>
+<method name='readFile' fullname='net.rim.bbm:BBMManager/private:readFile' isStatic='false' isFinal='false' isOverride='false'  param_names='file' param_types='flash.filesystem:File' param_defaults='undefined' result_type='flash.utils:ByteArray'>
+</method>
+<method name='registerApplication' fullname='net.rim.bbm:BBMManager/registerApplication' isStatic='false' isFinal='false' isOverride='false'  param_names='uuid' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 Register your app with the BBM Social Platform.
+		 <p>
+		 A UUID is a unique, 128-bit, 36-character identifier that you
+		 generate for your app using a UUID generator. The UUID string must conform to
+ 		 the Microsoft 8-4-4-4-12 format (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).
+		 </p>
+		 <p>A progress registration dialog may appear in your application after you
+ 		 invoke this function. The user will be able to cancel the registration by
+ 		 dismissing the dialog. Once the registration is completed, a system toast
+ 		 may appear indicating to the user that your application is now connected to BBM.</p>
+ 		 <p>If BBM is not setup when registration starts, the user may decide to setup
+ 		 BBM. This action will trigger the registration to resume.</p>
+ 		 <p>
+ 		 <code>BBMRegisterEvent</code> events are dispatched during the registration process.
+ 		 </p>
+ 		 ]]></description>
+<param><![CDATA[uuid The application's uuid.
+ 		 ]]></param>
+<see><![CDATA[net.rim.events.BBMRegisterEvent BBMRegisterEvent
+		 ]]></see>
+</method>
+<method name='registerIcon' fullname='net.rim.bbm:BBMManager/registerIcon' isStatic='false' isFinal='false' isOverride='false'  param_names='path;id' param_types='String;int' param_defaults='undefined;undefined' result_type='int'>
+<description><![CDATA[
+		 Register an image with the BBM Social Platform for use with profile box items.
+		 <p>
+		 Registering an image uploads it to the user's BlackBerry device for use when the app is not running.
+ 		 This process takes place asynchronously. Images should be registered using
+ 		 the same ID on different devices and in
+ 		 different versions of your app because images are distributed on a
+ 		 peer-to-peer basis between devices.
+		 </p>
+		 <p>
+		 If <code>canShowProfileBox()</code> returns <code>false</code>, this method will return <code>BBMResult.FAILURE</code>.
+		 </p>
+		 ]]></description>
+<param><![CDATA[path The file path to the image. For example, <code>File.applicationDirectory.resolvePath("assets/apple.png").nativePath</code>
+		 ]]></param>
+<param><![CDATA[id The unique ID of the image. Must be > 0.
+		 ]]></param>
+<see><![CDATA[BBMResult
+		 ]]></see>
+<returns><![CDATA[Returns one of the values defined in <code>BBMResult</code>.
+		 ]]></returns>
+</method>
+<method name='removeAllProfileBoxItems' fullname='net.rim.bbm:BBMManager/removeAllProfileBoxItems' isStatic='false' isFinal='false' isOverride='false'  result_type='int'>
+<description><![CDATA[
+		 Remove all items in the profile box from the user's BlackBerry device.
+		 <p>
+		 This process takes place asynchronously. 
+		 If <code>canShowProfileBox()</code> returns <code>false</code>, this method will return <code>BBMResult.FAILURE</code>.
+		 </p>
+		 <p>
+		 Once the items are removed the <code>profileBoxItems</code> list is automatically updated.
+		 </p>
+		 ]]></description>
+<see><![CDATA[BBMResult
+		 ]]></see>
+<returns><![CDATA[Returns one of the values defined in <code>BBMResult</code>.
+		 ]]></returns>
+</method>
+<method name='removeProfileBoxItem' fullname='net.rim.bbm:BBMManager/removeProfileBoxItem' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='int'>
+<description><![CDATA[
+		 Remove a profile box item from the user's BBM profile box.
+		 <p>
+		 This process takes place asynchronously. 
+		 If <code>canShowProfileBox()</code> returns <code>false</code>, this method will return <code>BBMResult.FAILURE</code>.
+		 </p>
+		 <p>
+		 Once the item is removed the <code>profileBoxItems</code> list is automatically updated.
+		 </p>
+		 ]]></description>
+<param><![CDATA[id The id of the item to remove.
+		 ]]></param>
+<see><![CDATA[BBMResult
+		 ]]></see>
+<returns><![CDATA[Returns one of the values defined in <code>BBMResult</code>.
+		 ]]></returns>
+</method>
+<method name='retrieveProfileBoxIcon' fullname='net.rim.bbm:BBMManager/bbm_internal:retrieveProfileBoxIcon' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='int' param_defaults='undefined' result_type='int'>
+<description><![CDATA[ ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='sendDownloadInvitation' fullname='net.rim.bbm:BBMManager/sendDownloadInvitation' isStatic='false' isFinal='false' isOverride='false'  result_type='Boolean'>
+<description><![CDATA[
+		 Returns <code>true</code> if a download invitation can be sent.
+		 <p>
+		 This method will always return <code>false</code> before a successful registration.
+		 </p>
+		 ]]></description>
+<return><![CDATA[Returns <code>true</code> if inviations can be sent.
+		 ]]></return>
+</method>
+<method name='setUserProfileImage' fullname='net.rim.bbm:BBMManager/bbm_internal:setUserProfileImage' isStatic='false' isFinal='false' isOverride='false'  param_names='path' param_types='String' param_defaults='undefined' result_type='int'>
+<description><![CDATA[ ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='setUserProfileMessage' fullname='net.rim.bbm:BBMManager/bbm_internal:setUserProfileMessage' isStatic='false' isFinal='false' isOverride='false'  param_names='message' param_types='String' param_defaults='undefined' result_type='int'>
+<description><![CDATA[ ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='setUserProfileStatus' fullname='net.rim.bbm:BBMManager/bbm_internal:setUserProfileStatus' isStatic='false' isFinal='false' isOverride='false'  param_names='message;status' param_types='String;int' param_defaults='undefined;undefined' result_type='int'>
+<description><![CDATA[ ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='statusEvent' fullname='net.rim.bbm:BBMManager/private:statusEvent' isStatic='false' isFinal='false' isOverride='false'  param_names='event' param_types='flash.events:StatusEvent' param_defaults='undefined' result_type='void'>
+</method>
+<method name='bbmManager' fullname='net.rim.bbm:BBMManager/bbmManager/get' isStatic='true' isFinal='false' isOverride='false'  result_type='net.rim.bbm:BBMManager'>
+<description><![CDATA[
+		 Returns the singelton instance of <code>BBMManager</code>
+		 ]]></description>
+<return><![CDATA[The singleton instance of the class.
+		 ]]></return>
+</method>
+<method name='contacts' fullname='net.rim.bbm:BBMManager/contacts/get' isStatic='false' isFinal='false' isOverride='false'  result_type='qnx.ui.data:IDataProvider'>
+<description><![CDATA[
+		 Returns a list of BBM contacts that have the application installed.
+		 <p>
+		 The <code>IDataProvider</code> list is populated with <code>BBMContact</code> objects.
+		 </p>
+		 <p>
+		 It is important that you do not modify this list in any way. The list of contacts is managed strictly by this class. 
+		 Modifiying the list could lead to potential issues.
+		 </p>
+		 ]]></description>
+<return><![CDATA[A <code>IDataProvider</code> instance that can easily be set as a <code>dataProvider</code> for a <code>List</code> instance.
+		 ]]></return>
+<see><![CDATA[BBMContacts
+		 ]]></see>
+</method>
+<method name='profileBoxItems' fullname='net.rim.bbm:BBMManager/profileBoxItems/get' isStatic='false' isFinal='false' isOverride='false'  result_type='qnx.ui.data:IDataProvider'>
+<description><![CDATA[
+		 Returns a list of user profile box items for the current user.
+		 <p>
+		 The <code>IDataProvider</code> list is populated with <code>BBMProfileBoxItem</code> objects.
+		 </p>
+		 <p>
+		 In order to access the users profile box items, the <code>canShowProfileBox()</code> method must return <code>true</code>.
+		 </p>
+		 <p>
+		 It is important that you do not modify this list in any way. The list of profile box items is managed strictly by this class. 
+		 Modifiying the list could lead to potential issues.
+		 </p>
+		 ]]></description>
+<return><![CDATA[A <code>IDataProvider</code> instance that can easily be set as a <code>dataProvider</code> for a <code>List</code> instance.
+		 ]]></return>
+<see><![CDATA[BBMProfileBoxItem
+		 ]]></see>
+</method>
+<method name='version' fullname='net.rim.bbm:BBMManager/version/get' isStatic='false' isFinal='false' isOverride='false'  result_type='int'>
+<description><![CDATA[
+		 Gets the version number of the BBM Social Platform.
+		 <p>
+		 Retrieves the version of the BBM Social Platform library that your application is using. 
+		 You can use the version number to check whether your application is compatible with this version of the BBM Social Platform.
+		 </p>
+		 ]]></description>
+<return><![CDATA[The version number of the BBM Social Platform library in the format.
+		 ]]></return>
+</method>
+<field name='__boxItems' fullname='net.rim.bbm:BBMManager/private:__boxItems' type='net.rim.bbm.data:BBMProfileBoxItemProvider' isStatic='false' isConst='false' >
+</field>
+<field name='__contacts' fullname='net.rim.bbm:BBMManager/private:__contacts' type='net.rim.bbm.data:BBMContactsProvider' isStatic='false' isConst='false' defaultValue='unknown' >
+</field>
+<field name='__context' fullname='net.rim.bbm:BBMManager/private:__context' type='flash.external:ExtensionContext' isStatic='false' isConst='false' >
+</field>
+<field name='__iconDir' fullname='net.rim.bbm:BBMManager/private:__iconDir' type='flash.filesystem:File' isStatic='false' isConst='false' >
+</field>
+<field name='__instance' fullname='net.rim.bbm:BBMManager/private:__instance' type='net.rim.bbm:BBMManager' isStatic='true' isConst='false' >
+</field>
+<field name='__userProfile' fullname='net.rim.bbm:BBMManager/private:__userProfile' type='net.rim.bbm:BBMUserProfile' isStatic='false' isConst='false' >
+</field>
+<classRec name='BBMContactEvent' fullname='net.rim.events:BBMContactEvent' sourcefile='/Users/jdolce/Projects/github.rim.com/bbm/ane/as3/src/net/rim/events/BBMContactEvent.as' namespace='net.rim.events' access='public' baseclass='flash.events:Event' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 <code>BBMContactEvent</code> events are dispatched by the <code>BBMManager</code> class when contacts are updated.
+	 ]]></description>
+<bbtags><![CDATA[<version>10.2</version>
+     <foundin>BBM.ane</foundin>
+	 ]]></bbtags>
+</classRec>
+<method name='BBMContactEvent' fullname='net.rim.events:BBMContactEvent/BBMContactEvent' isStatic='false' isFinal='false' isOverride='false'  param_names='type;contact;updateType' param_types='String;net.rim.bbm:BBMContact;int' param_defaults='undefined;null;-1' result_type='*'>
+<description><![CDATA[
+		 Creates a <code>BBMContactEvent</code> instance.
+		 ]]></description>
+<param><![CDATA[type The type of event.
+		 ]]></param>
+<param><![CDATA[contact The contact for the event.
+		 ]]></param>
+<param><![CDATA[updateType The updateType of the event.
+		 ]]></param>
+</method>
+<method name='clone' fullname='net.rim.events:BBMContactEvent/clone' isStatic='false' isFinal='false' isOverride='true'  result_type='flash.events:Event'>
+<description><![CDATA[ ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='toString' fullname='net.rim.events:BBMContactEvent/toString' isStatic='false' isFinal='false' isOverride='true'  result_type='String'>
+<description><![CDATA[ ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='contact' fullname='net.rim.events:BBMContactEvent/contact/get' isStatic='false' isFinal='false' isOverride='false'  result_type='net.rim.bbm:BBMContact'>
+<description><![CDATA[
+		 The contact that was updated. 
+		 ]]></description>
+</method>
+<method name='updateType' fullname='net.rim.events:BBMContactEvent/updateType/get' isStatic='false' isFinal='false' isOverride='false'  result_type='int'>
+<description><![CDATA[
+		 Defines what was updated for the specified contact.
+		 <p>
+		 Valid values can be found in <code>BBMContactupdateTypes</code>
+		 </p>
+		 ]]></description>
+<see><![CDATA[BBMContactUpdateTypes
+		 ]]></see>
+</method>
+<field name='CONTACT_LIST' fullname='net.rim.events:BBMContactEvent/CONTACT_LIST' type='String' isStatic='true' isConst='true' defaultValue='contact_list' >
+<description><![CDATA[
+		 Event type dispatched when the contact list is retrieved from the BBM Social Platform servers.
+		 <p>The BBMContactEvent.CONTACT_LIST constant defines the value of the
+	      <code>type</code> property of the event object for an
+	      <code>contact_list</code> event.</p>
+	     	      <p>The properties of the event object have the following values:</p>
+	      <table class="innertable">
+	         <tr><th>Property</th><th>Value</th></tr>
+	         <tr><td><code>bubbles</code></td><td>false</td></tr>
+	         <tr><td><code>cancelable</code></td><td>false</td></tr>
+	         <tr><td><code>contact</code></td><td>The contact property is null for this event type.</td></tr>
+	         <tr><td><code>currentTarget</code></td><td>The object that is actively processing the Event object with an event listener.</td></tr>
+	         <tr><td><code>type</code></td><td>BBMContactEvent.CONTACT_LIST</td></tr>
+	         <tr><td><code>updateType</code></td><td>The updateType property is null for this event type.</td></tr>
+	      </table>
+	     	      ]]></description>
+<eventType><![CDATA[contact_list
+		 ]]></eventType>
+</field>
+<field name='CONTACT_UPDATE' fullname='net.rim.events:BBMContactEvent/CONTACT_UPDATE' type='String' isStatic='true' isConst='true' defaultValue='contact_update' >
+<description><![CDATA[
+		 Event type dispatched when a contact is updated.
+		 <p>The BBMContactEvent.CONTACT_UPDATE constant defines the value of the
+	      <code>type</code> property of the event object for an
+	      <code>contact_update</code> event.</p>
+	     	      <p>The properties of the event object have the following values:</p>
+	      <table class="innertable">
+	         <tr><th>Property</th><th>Value</th></tr>
+	         <tr><td><code>bubbles</code></td><td>false</td></tr>
+	         <tr><td><code>cancelable</code></td><td>false</td></tr>
+	         <tr><td><code>contact</code></td><td>The contact that was updated.</td></tr>
+	         <tr><td><code>currentTarget</code></td><td>The object that is actively processing the Event object with an event listener.</td></tr>
+	         <tr><td><code>type</code></td><td>BBMContactEvent.CONTACT_UPDATE</td></tr>
+	         <tr><td><code>updateType</code></td><td>The property that of the contact that was updated.</td></tr>
+	      </table>
+	     	      ]]></description>
+<eventType><![CDATA[contact_update
+		 ]]></eventType>
+</field>
+<field name='__contact' fullname='net.rim.events:BBMContactEvent/private:__contact' type='net.rim.bbm:BBMContact' isStatic='false' isConst='false' >
+</field>
+<field name='__updateType' fullname='net.rim.events:BBMContactEvent/private:__updateType' type='int' isStatic='false' isConst='false' >
+</field>
+<classRec name='BBMUserProfileEvent' fullname='net.rim.events:BBMUserProfileEvent' sourcefile='/Users/jdolce/Projects/github.rim.com/bbm/ane/as3/src/net/rim/events/BBMUserProfileEvent.as' namespace='net.rim.events' access='public' baseclass='flash.events:Event' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 <code>BBMUserProfileEvent</code> events are dispatched by the <code>BBMManager</code> class when the users profile is updated.
+	 ]]></description>
+<bbtags><![CDATA[<version>10.2</version>
+     <foundin>BBM.ane</foundin>
+	 ]]></bbtags>
+</classRec>
+<method name='BBMUserProfileEvent' fullname='net.rim.events:BBMUserProfileEvent/BBMUserProfileEvent' isStatic='false' isFinal='false' isOverride='false'  param_names='type;updateType' param_types='String;int' param_defaults='undefined;-1' result_type='*'>
+<description><![CDATA[
+		 Creates a <code>BBMUserProfileEvent</code> instance.
+		 ]]></description>
+<param><![CDATA[type The type of event.
+		 ]]></param>
+<param><![CDATA[updateType The type of update.
+		 ]]></param>
+</method>
+<method name='clone' fullname='net.rim.events:BBMUserProfileEvent/clone' isStatic='false' isFinal='false' isOverride='true'  result_type='flash.events:Event'>
+<description><![CDATA[ ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='toString' fullname='net.rim.events:BBMUserProfileEvent/toString' isStatic='false' isFinal='false' isOverride='true'  result_type='String'>
+<description><![CDATA[ ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='updateType' fullname='net.rim.events:BBMUserProfileEvent/updateType/get' isStatic='false' isFinal='false' isOverride='false'  result_type='int'>
+<description><![CDATA[
+		 Defines what was updated for the specified user profile.
+		 <p>
+		 Valid values can be found in <code>BBMContactupdateTypes</code>
+		 </p>
+		 ]]></description>
+<see><![CDATA[BBMContactUpdateTypes
+		 ]]></see>
+</method>
+<field name='UPDATE' fullname='net.rim.events:BBMUserProfileEvent/UPDATE' type='String' isStatic='true' isConst='true' defaultValue='userProfileUpdate' >
+<description><![CDATA[
+		 Event type dispatched when the user profile is updated.
+		 <p>The BBMUserProfileEvent.UPDATE constant defines the value of the
+	      <code>type</code> property of the event object for an
+	      <code>userProfileUpdate</code> event.</p>
+	     	      <p>The properties of the event object have the following values:</p>
+	      <table class="innertable">
+	         <tr><th>Property</th><th>Value</th></tr>
+	         <tr><td><code>bubbles</code></td><td>false</td></tr>
+	         <tr><td><code>cancelable</code></td><td>false</td></tr>
+	         <tr><td><code>currentTarget</code></td><td>The object that is actively processing the Event object with an event listener.</td></tr>
+	         <tr><td><code>type</code></td><td>BBMUserProfileEvent.UPDATE</td></tr>
+	         <tr><td><code>updateType</code></td><td>What was updated in the users profile.</td></tr>
+	      </table>
+	     	      ]]></description>
+<eventType><![CDATA[userProfileUpdate
+		 ]]></eventType>
+</field>
+<field name='__updateType' fullname='net.rim.events:BBMUserProfileEvent/private:__updateType' type='int' isStatic='false' isConst='false' >
+</field>
+<classRec name='BBMRegisterEvent' fullname='net.rim.events:BBMRegisterEvent' sourcefile='/Users/jdolce/Projects/github.rim.com/bbm/ane/as3/src/net/rim/events/BBMRegisterEvent.as' namespace='net.rim.events' access='public' baseclass='flash.events:Event' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 <code>BBMRegisterEvent</code> events are dispatched by the <code>BBMManager</code> class when registration events occur.
+	 ]]></description>
+<see><![CDATA[net.rim.bbm.BBMManager BBMManager
+	 ]]></see>
+<bbtags><![CDATA[<version>10.2</version>
+     <foundin>BBM.ane</foundin>
+     ]]></bbtags>
+</classRec>
+<method name='BBMRegisterEvent' fullname='net.rim.events:BBMRegisterEvent/BBMRegisterEvent' isStatic='false' isFinal='false' isOverride='false'  param_names='type' param_types='String' param_defaults='undefined' result_type='*'>
+<description><![CDATA[
+		 Creates a <code>BBMRegisterEvent</code> instance.
+		 ]]></description>
+<param><![CDATA[type The type of event.
+		 ]]></param>
+</method>
+<method name='clone' fullname='net.rim.events:BBMRegisterEvent/clone' isStatic='false' isFinal='false' isOverride='true'  result_type='flash.events:Event'>
+<description><![CDATA[ ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='toString' fullname='net.rim.events:BBMRegisterEvent/toString' isStatic='false' isFinal='false' isOverride='true'  result_type='String'>
+<description><![CDATA[ ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<field name='DENIED' fullname='net.rim.events:BBMRegisterEvent/DENIED' type='String' isStatic='true' isConst='true' defaultValue='register_denied' >
+<description><![CDATA[
+		 Event type dispatched when access to the BBM Social Platform is denied. This is usually the result of the user turning off BBM in the application permissions.
+		 <p>The BBMRegisterEvent.DENIED constant defines the value of the
+	      <code>type</code> property of the event object for an
+	      <code>register_denied</code> event.</p>
+	     	      <p>The properties of the event object have the following values:</p>
+	      <table class="innertable">
+	         <tr><th>Property</th><th>Value</th></tr>
+	         <tr><td><code>bubbles</code></td><td>false</td></tr>
+	         <tr><td><code>cancelable</code></td><td>false</td></tr>
+	         <tr><td><code>currentTarget</code></td><td>The object that is actively processing the Event object with an event listener.</td></tr>
+	         <tr><td><code>type</code></td><td>BBMRegisterEvent.DENIED</td></tr>
+	      </table>
+	     	      ]]></description>
+<eventType><![CDATA[register_denied
+		 ]]></eventType>
+</field>
+<field name='PENDING' fullname='net.rim.events:BBMRegisterEvent/PENDING' type='String' isStatic='true' isConst='true' defaultValue='register_pending' >
+<description><![CDATA[
+		 Event type dispatched when the application is in the process of registering with the BBM Social Platform.
+		 <p>The BBMRegisterEvent.PENDING constant defines the value of the
+	      <code>type</code> property of the event object for an
+	      <code>register_pending</code> event.</p>
+	     	      <p>The properties of the event object have the following values:</p>
+	      <table class="innertable">
+	         <tr><th>Property</th><th>Value</th></tr>
+	         <tr><td><code>bubbles</code></td><td>false</td></tr>
+	         <tr><td><code>cancelable</code></td><td>false</td></tr>
+	         <tr><td><code>currentTarget</code></td><td>The object that is actively processing the Event object with an event listener.</td></tr>
+	         <tr><td><code>type</code></td><td>BBMRegisterEvent.PENDING</td></tr>
+	      </table>
+	     	      ]]></description>
+<eventType><![CDATA[register_pending
+		 ]]></eventType>
+</field>
+<field name='SUCCESS' fullname='net.rim.events:BBMRegisterEvent/SUCCESS' type='String' isStatic='true' isConst='true' defaultValue='register_success' >
+<description><![CDATA[
+		 Event type dispatched when the application has successfully registered with the BBM Social Platform.
+		 <p>The BBMRegisterEvent.SUCCESS constant defines the value of the
+	      <code>type</code> property of the event object for an
+	      <code>register_success</code> event.</p>
+	     	      <p>The properties of the event object have the following values:</p>
+	      <table class="innertable">
+	         <tr><th>Property</th><th>Value</th></tr>
+	         <tr><td><code>bubbles</code></td><td>false</td></tr>
+	         <tr><td><code>cancelable</code></td><td>false</td></tr>
+	         <tr><td><code>currentTarget</code></td><td>The object that is actively processing the Event object with an event listener.</td></tr>
+	         <tr><td><code>type</code></td><td>BBMRegisterEvent.SUCCESS</td></tr>
+	      </table>
+	     	      ]]></description>
+<eventType><![CDATA[register_success
+		 ]]></eventType>
+</field>
+<field name='UNREGISTERED' fullname='net.rim.events:BBMRegisterEvent/UNREGISTERED' type='String' isStatic='true' isConst='true' defaultValue='register_unregistered' >
+<description><![CDATA[
+		 Event type dispatched when the application is not registered with the BBM Social Platform.
+		 <p>The BBMRegisterEvent.UNREGISTERED constant defines the value of the
+	      <code>type</code> property of the event object for an
+	      <code>register_unregistered</code> event.</p>
+	     	      <p>The properties of the event object have the following values:</p>
+	      <table class="innertable">
+	         <tr><th>Property</th><th>Value</th></tr>
+	         <tr><td><code>bubbles</code></td><td>false</td></tr>
+	         <tr><td><code>cancelable</code></td><td>false</td></tr>
+	         <tr><td><code>currentTarget</code></td><td>The object that is actively processing the Event object with an event listener.</td></tr>
+	         <tr><td><code>type</code></td><td>BBMRegisterEvent.UNREGISTERED</td></tr>
+	      </table>
+	     	      ]]></description>
+<eventType><![CDATA[register_unregistered
+		 ]]></eventType>
+</field>
+<classRec name='BBMDataProvider' fullname='net.rim.bbm.data:BBMDataProvider' sourcefile='/Users/jdolce/Projects/github.rim.com/bbm/ane/as3/src/net/rim/bbm/data/BBMDataProvider.as' namespace='net.rim.bbm.data' access='public' baseclass='flash.events:EventDispatcher' interfaces='qnx.ui.data:IDataProvider' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 ]]></description>
+<private><![CDATA[]]></private>
+<metadata>
+	<Event owner='net.rim.bbm.data:BBMDataProvider' name='dataChange' type='qnx.ui.events.DataProviderEvent' >
+<description><![CDATA[
+	Dispatched when the items are added, removed or updated.
+	]]></description>
+<eventType><![CDATA[qnx.ui.events.DataProviderEvent.DATA_CHANGE
+	]]></eventType>
+	</Event>
+</metadata>
+</classRec>
+<method name='BBMDataProvider' fullname='net.rim.bbm.data:BBMDataProvider/BBMDataProvider' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
+<description><![CDATA[
+		Creates a new <code>BBMDataProvider</code> instance.
+		]]></description>
+</method>
+<method name='addItemAt' fullname='net.rim.bbm.data:BBMDataProvider/addItemAt' isStatic='false' isFinal='false' isOverride='false'  param_names='item;index' param_types='Object;int' param_defaults='undefined;undefined' result_type='void'>
+<description><![CDATA[
+		]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<method name='addItem' fullname='net.rim.bbm.data:BBMDataProvider/addItem' isStatic='false' isFinal='false' isOverride='false'  param_names='item' param_types='Object' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<method name='addItemsAt' fullname='net.rim.bbm.data:BBMDataProvider/addItemsAt' isStatic='false' isFinal='false' isOverride='false'  param_names='items;index' param_types='Array;int' param_defaults='undefined;undefined' result_type='void'>
+<description><![CDATA[
+		]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<method name='checkIndex' fullname='net.rim.bbm.data:BBMDataProvider/protected:checkIndex' isStatic='false' isFinal='false' isOverride='false'  param_names='index;maximum' param_types='int;int' param_defaults='undefined;undefined' result_type='void'>
+<description><![CDATA[ ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='clone' fullname='net.rim.bbm.data:BBMDataProvider/clone' isStatic='false' isFinal='false' isOverride='false'  result_type='qnx.ui.data:IDataProvider'>
+<description><![CDATA[
+		Creates a clone of this <code>BBMDataProvider</code>. The new instance contains the same data.
+		
+		]]></description>
+<return><![CDATA[The cloned <code>BBMDataProvider</code>.
+		]]></return>
+</method>
+<method name='dispatchChange' fullname='net.rim.bbm.data:BBMDataProvider/protected:dispatchChange' isStatic='false' isFinal='false' isOverride='false'  param_names='type;items;startIndex;endIndex;childStartIndex;childEndIndex' param_types='String;Array;int;int;int;int' param_defaults='undefined;undefined;undefined;undefined;-1;-1' result_type='void'>
+<description><![CDATA[ ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='getItemAt' fullname='net.rim.bbm.data:BBMDataProvider/getItemAt' isStatic='false' isFinal='false' isOverride='false'  param_names='index' param_types='int' param_defaults='undefined' result_type='Object'>
+<description><![CDATA[
+		 ]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<method name='indexOf' fullname='net.rim.bbm.data:BBMDataProvider/indexOf' isStatic='false' isFinal='false' isOverride='false'  param_names='item' param_types='Object' param_defaults='undefined' result_type='int'>
+<description><![CDATA[
+		 ]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<method name='removeAll' fullname='net.rim.bbm.data:BBMDataProvider/removeAll' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<method name='removeItemAt' fullname='net.rim.bbm.data:BBMDataProvider/removeItemAt' isStatic='false' isFinal='false' isOverride='false'  param_names='index' param_types='int' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<method name='removeItem' fullname='net.rim.bbm.data:BBMDataProvider/removeItem' isStatic='false' isFinal='false' isOverride='false'  param_names='item' param_types='Object' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<method name='replaceItemAt' fullname='net.rim.bbm.data:BBMDataProvider/replaceItemAt' isStatic='false' isFinal='false' isOverride='false'  param_names='item;index' param_types='Object;int' param_defaults='undefined;undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<method name='replaceItem' fullname='net.rim.bbm.data:BBMDataProvider/replaceItem' isStatic='false' isFinal='false' isOverride='false'  param_names='item;oldObject' param_types='Object;Object' param_defaults='undefined;undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<method name='setItems' fullname='net.rim.bbm.data:BBMDataProvider/setItems' isStatic='false' isFinal='false' isOverride='false'  param_names='arr;throwEvent' param_types='Array;Boolean' param_defaults='undefined;false' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<method name='updateItemAt' fullname='net.rim.bbm.data:BBMDataProvider/updateItemAt' isStatic='false' isFinal='false' isOverride='false'  param_names='item;index' param_types='Object;int' param_defaults='undefined;undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<method name='updateItem' fullname='net.rim.bbm.data:BBMDataProvider/updateItem' isStatic='false' isFinal='false' isOverride='false'  param_names='item;oldObject' param_types='Object;Object' param_defaults='undefined;undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<method name='updateItemsAt' fullname='net.rim.bbm.data:BBMDataProvider/updateItemsAt' isStatic='false' isFinal='false' isOverride='false'  param_names='items;index' param_types='Array;int' param_defaults='undefined;undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<method name='data' fullname='net.rim.bbm.data:BBMDataProvider/data/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Array'>
+<description><![CDATA[
+		 ]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<method name='length' fullname='net.rim.bbm.data:BBMDataProvider/length/get' isStatic='false' isFinal='false' isOverride='false'  result_type='int'>
+<description><![CDATA[
+		]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<field name='__data' fullname='net.rim.bbm.data:BBMDataProvider/private:__data' type='Array' isStatic='false' isConst='false' >
+</field>
+<classRec name='BBMContactsProvider' fullname='net.rim.bbm.data:BBMContactsProvider' sourcefile='/Users/jdolce/Projects/github.rim.com/bbm/ane/as3/src/net/rim/bbm/data/BBMContactsProvider.as' namespace='net.rim.bbm.data' access='public' baseclass='net.rim.bbm.data:BBMDataProvider' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 ]]></description>
+<private><![CDATA[]]></private>
+</classRec>
+<method name='BBMContactsProvider' fullname='net.rim.bbm.data:BBMContactsProvider/BBMContactsProvider' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
+</method>
+<method name='getContactWithId' fullname='net.rim.bbm.data:BBMContactsProvider/getContactWithId' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='net.rim.bbm:BBMContact'>
+</method>
+<method name='indexOfContactId' fullname='net.rim.bbm.data:BBMContactsProvider/indexOfContactId' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='int'>
+</method>
+<method name='updateContactWithId' fullname='net.rim.bbm.data:BBMContactsProvider/updateContactWithId' isStatic='false' isFinal='false' isOverride='false'  param_names='id;prop;value;status' param_types='String;int;String;int' param_defaults='undefined;undefined;undefined;undefined' result_type='net.rim.bbm:BBMContact'>
+</method>
+<classRec name='BBMProfileBoxItemProvider' fullname='net.rim.bbm.data:BBMProfileBoxItemProvider' sourcefile='/Users/jdolce/Projects/github.rim.com/bbm/ane/as3/src/net/rim/bbm/data/BBMProfileBoxItemProvider.as' namespace='net.rim.bbm.data' access='public' baseclass='net.rim.bbm.data:BBMDataProvider' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 ]]></description>
+<private><![CDATA[]]></private>
+</classRec>
+<method name='BBMProfileBoxItemProvider' fullname='net.rim.bbm.data:BBMProfileBoxItemProvider/BBMProfileBoxItemProvider' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
+</method>
+<method name='getItemWithId' fullname='net.rim.bbm.data:BBMProfileBoxItemProvider/getItemWithId' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='net.rim.bbm:BBMProfileBoxItem'>
+</method>
+<method name='indexOfItemId' fullname='net.rim.bbm.data:BBMProfileBoxItemProvider/indexOfItemId' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='int'>
+</method>
+<method name='removeItemWithId' fullname='net.rim.bbm.data:BBMProfileBoxItemProvider/removeItemWithId' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='void'>
+</method>
+<method name='updateIcon' fullname='net.rim.bbm.data:BBMProfileBoxItemProvider/updateIcon' isStatic='false' isFinal='false' isOverride='false'  param_names='iconid;path' param_types='int;String' param_defaults='undefined;undefined' result_type='void'>
+</method>
+</asdoc>

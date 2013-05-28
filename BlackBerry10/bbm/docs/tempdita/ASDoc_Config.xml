@@ -1,0 +1,38 @@
+
+<asDocConfig>
+  
+<options buildNum="asd3_0_final_1" verbose="false" livedocs="false" standalone="true" eclipse="false" docversion="3" includePrivate="false" splitIndex="true" showVersions="true" showConventions="false" showReview="true"></options>
+
+  
+<keywords show="false" num="500"></keywords>
+
+  
+<warnings langversion="false" playerversion="false" xref="true"></warnings>
+	
+
+  
+<xmlInputFile>toplevel.xml</xmlInputFile>
+  
+<languageElements show="false" constants="true" functions="true" operators="false" statements="false" specialTypes="false"></languageElements>
+	
+<namespaces hideAll="false">
+    
+<namespace hide="false" summaryDisplay="public">AS3</namespace>
+    
+<namespace hide="true">mx_internal</namespace>
+    
+<namespace hide="false" summaryDisplay="protected">flash_proxy</namespace>
+    
+<namespace hide="false" summaryDisplay="protected">object_proxy</namespace>
+    
+<namespace hide="false">mx_inner</namespace>
+    
+<namespace hide="false" summaryDisplay="public">flash10</namespace>
+  </namespaces>
+
+
+
+<footer>Copyright 2013 Research In Motion Limited. 295 Phillip Street&#044; Waterloo&#044; Ontario&#044; Canada&#044; N2L 3W8. All Rights Reserved.</footer>
+<title>BlackBerry<sup>®</sup> 10 BBM AIR Native Extension</title>
+<windowTitle>BlackBerry<sup>®</sup> 10 BBM AIR Native Extension</windowTitle>
+<dateInFooter>true</dateInFooter></asDocConfig>

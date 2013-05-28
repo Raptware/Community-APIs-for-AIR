@@ -1,0 +1,1289 @@
+
+<overviews> 
+    
+<packages> 
+    
+      
+<package name="caurina.transitions"> 
+                
+<shortDescription> 
+                     
+                        Contains the classes that are used to create tweenings 
+                        and other transitions.  
+                     
+                </shortDescription> 
+                
+<description> 
+                     
+                          The &lt;b&gt;caurina.transitions.properties&lt;/b&gt; package contains the classes that are used to create tweenings 
+                        and other transitions.  
+                     
+                </description> 
+        </package>
+        
+        
+        
+<package name="caurina.transitions.properties"> 
+	                
+<shortDescription> 
+	                     
+	                        Contains properties for the 
+	                        &lt;b&gt;caurina.transitions&lt;/b&gt; package.
+	                     
+	                </shortDescription> 
+	                
+<description> 
+	                     
+	                            The &lt;b&gt;caurina.transitions.properties&lt;/b&gt; package contains properties for the 
+	                        &lt;b&gt;caurina.transitions&lt;/b&gt; package.
+	                     
+	                </description> 
+        </package>
+        
+       
+        
+	    
+<package name="net.rim.blackberry.bbid"> 
+		    
+<shortDescription> 
+			 
+			    Contains the classes that are used to identify a BlackBerry user by unique BlackBerry ID and persist data for that
+			    ID. 
+			    
+			 
+		    </shortDescription> 
+		    
+<description> 
+			 
+			   The &lt;b&gt;net.rim.blackberry.bbid&lt;/b&gt; package contains the classes that are used to identify a BlackBerry user by 
+			   unique BlackBerry ID. You can use the &lt;b&gt;BBIDProfile&lt;/b&gt; class to persist information for
+			   the current user. The &lt;b&gt;UserResource&lt;/b&gt; class defines information about user resources, while the 
+			   &lt;b&gt;UserProperty&lt;/b&gt; class defines properties that are specific to the BBID user profile.
+			 
+		    </description> 
+        </package>
+        
+        
+	   	
+<package name="net.rim.blackberry.events"> 
+		    
+<shortDescription> 
+			 
+			    Contains events specific to BlackBerry services.
+
+			 
+		    </shortDescription> 
+		    
+<description> 
+			 
+			   The &lt;b&gt;net.rim.blackberry.events&lt;/b&gt; package contains event implementations for BlackBerry specific services.
+			 
+		    </description> 
+        </package>
+        
+      
+        
+        
+       
+		       
+<package name="net.rim.blackberry.payment"> 
+			    
+<shortDescription> 
+				 
+				    Contains classes that enable you to purchase items online and to view past transactions.
+	
+				 
+			    </shortDescription> 
+			    
+<description> 
+				 
+				   The &lt;b&gt;net.rim.blackberry.payment&lt;/b&gt; package contains classes that allow you to 
+				   purchase items online and view existing purchase information including past transactions.
+				 
+			    </description> 
+			 </package>
+				 
+<package name="net.rim.blackberry.push"> 
+				    
+<shortDescription> 
+					 
+					    Contains classes that enable you to use the Push Notification service.
+
+					 
+				    </shortDescription> 
+				    
+<description> 
+					 
+					   The &lt;b&gt;net.rim.blackberry.push&lt;/b&gt; package contains classes that allow you to 
+					   push notifications remotely to applications.
+					 
+				    </description>
+        </package>
+
+        
+          
+	       
+<package name="qnx.display"> 
+		    
+<shortDescription> 
+			 
+			    Contains classes that allow you to define the behavior and appearance of an application display window. This includes properties 
+			    that define X and Y position, Z-order, alpha values and transparency, and 
+			    focus behavior. This package also contains the Display class which allows you to interact with and configure internal and external displays.
+
+			 
+		    </shortDescription> 
+		    
+<description> 
+			 
+			   The &lt;b&gt;qnx.display&lt;/b&gt; package contains classes that allow you to define the behavior and appearance of an application display window.
+			   This includes properties that define X and Y position, Z-order, alpha values and transparency, and 
+			    focus behavior.  This package also contains the Display class which allows you to interact with and configure internal and external displays.
+   
+			 
+		    </description> 
+        </package>
+           
+        
+        
+       
+<package name="qnx.ui.data"> 
+	    
+<shortDescription> 
+		 
+		    Contains the classes that provide data for UI elements that implement the  <i>IDataViewer</i>  interface, such as lists. The 
+		    &lt;code&gt;DataProvider&lt;/code&gt; and &lt;code&gt;SectionDataProvider&lt;/code&gt; provide data and methods that 
+		    allow you to modify the data. 
+		    
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		   The &lt;b&gt;qnx.ui.data&lt;/b&gt; package contains the classes that provide data for UI elements that implement the  <i>IDataViewer</i>
+		   interface, such as lists. The 
+		   &lt;code&gt;DataProvider&lt;/code&gt; and &lt;code&gt;SectionDataProvider&lt;/code&gt; provide data and methods that 
+		   allow you to modify the data. 
+		 
+	    </description> 
+        </package>
+        
+        
+       
+<package name="qnx.ui.events"> 
+    	
+<shortDescription> 
+	 
+		   Contains event functionality for all user interface components. This includes
+		   specialized event types for each of the list classes as well as event classes for media controls, toggle switches and
+		   sliders.
+	 
+    	</shortDescription> 
+    	
+<description> 
+	 
+		    The &lt;b&gt;qnx.ui.events&lt;/b&gt; package contains event functionality for all user interface components. This includes
+		    specialized event types for each of the list classes as well as event classes for media controls, toggle switches and
+		    sliders.
+	 
+   	 </description> 
+        </package>
+    
+    	
+  	
+<package name="qnx.events"> 
+		
+<shortDescription> 
+		     
+			Contains the common API event functionality. This includes battery level and state events, media service 
+			connection events, image cache utility events, and application-related events (such as the low memory event).
+			
+		     
+		</shortDescription> 
+		
+<description> 
+		     
+			  The &lt;b&gt;qnx.events&lt;/b&gt; package contains the common API event functionality. This includes battery level and state events, media service 
+			connection events, image cache utility events, and application-related events (such as the low memory event).
+		     
+		</description> 
+        </package>
+    
+        
+<package name="qnx.locale"> 
+	    
+<shortDescription> 
+		 
+		   Enables you to utilize locale-specific resources in order to provide a properly translated, multilingual 
+		   user-experience for your application.
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		    The &lt;b&gt;qnx.locale&lt;/b&gt; package enables you to utilize locale-specific resources in order to 
+		    provide a properly translated, multilingual user-experience for your application.
+		 
+	    </description> 
+        </package>
+
+	 
+	        
+<package name="qnx.invoke"> 
+		    
+<shortDescription> 
+			 
+			  Provides the ability to invoke applications, viewers and cards.
+			 
+		    </shortDescription> 
+		    
+<description> 
+			 
+			    The &lt;b&gt;qnx.invoke&lt;/b&gt; package provides the ability to invoke applications, viewers and cards.
+			 
+		    </description> 
+	        </package>
+	
+			 
+			        
+<package name="qnx.sensors"> 
+				    
+<shortDescription> 
+					 
+					  Provides ability to interact with device sensors, such as Gyroscope, Magnetometer and Rotation Matrix.
+					 
+				    </shortDescription> 
+				    
+<description> 
+					 
+					    The &lt;b&gt;qnx.sensors&lt;/b&gt; package provides ability to interact with device sensors, such as Gyroscope, Magnetometer and Rotation Matrix.
+					 
+				    </description> 
+			        </package>
+
+        
+        
+<package name="qnx.media"> 
+	    
+<shortDescription> 
+		 
+		    Contains the classes that define low-level media player functionality.
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		    The &lt;b&gt;qnx.media&lt;/b&gt; package contains the classes that define low-level media player
+		    functionality. This includes classes that enable you to play and manipulate media, manage connections to external 
+		    servers, and define the dimensions of the media playing surface.
+		 
+	    </description> 
+        </package>
+        
+        
+<package name="qnx.notification"> 
+	    
+<shortDescription> 
+		 
+		   Provides event notification services and the notification management functionality.
+
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		    The &lt;b&gt;qnx.notification&lt;/b&gt; package provides event notification services and the notification management functionality.
+		 
+	    </description> 
+        </package>
+
+		
+<package name="qnx.crypto"> 
+	    
+<shortDescription> 
+		 
+		   Provides cryptography classes.
+
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		    The &lt;b&gt;qnx.crypto&lt;/b&gt; package provides cryptography classes.
+		 
+	    </description> 
+        </package>
+    
+      
+        
+<package name="qnx.system"> 
+	    
+<shortDescription> 
+		 
+		   Encapsulates and exposes system, device, and application-specific properties. This includes battery 
+		   status, PIN and software version information, and application-specific data.
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		    The &lt;b&gt;qnx.system&lt;/b&gt; package encapsulates and exposes system, device, and application-specific 
+		    properties. This includes battery status, PIN and software version information, and application-specific data.
+		 
+	    </description> 
+        </package> 
+		
+		
+		
+		
+        
+<package name="qnx.fuse.style"> 
+	    
+<shortDescription> 
+		 
+		   Contains the functionality to style components with CSS in your applications.
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		     The &lt;b&gt;qnx.fuse.style&lt;/b&gt; package contains the functionality to style components with CSS in your applications.
+		     &lt;p&gt; 
+		     
+		 
+	    </description> 
+        </package>
+		
+		
+        
+<package name="qnx.fuse.style.css"> 
+	    
+<shortDescription> 
+		 
+		   Contains classes to allow your own objects to be styled with CSS.
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		     The &lt;b&gt;qnx.fuse.style.css&lt;/b&gt; package contains classes to allow your own objects to be styled with CSS.
+		     &lt;p&gt; 
+		     
+		 
+	    </description> 
+        </package>
+		
+		
+        
+<package name="qnx.fuse.ui.actionbar"> 
+	    
+<shortDescription> 
+		 
+		   Contains the functionality used to provide an action bar in your applications.
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		     The &lt;b&gt;qnx.fuse.ui.actionbar&lt;/b&gt; package contains the functionality used to provide an action bar in your applications.
+		     &lt;p&gt; 
+		     
+		 
+	    </description> 
+        </package>
+		
+		
+        
+<package name="qnx.fuse.ui.buttons"> 
+	    
+<shortDescription> 
+		 
+		   Contains the functionality used to implement buttons.
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		     The &lt;b&gt;qnx.fuse.ui.buttons&lt;/b&gt; package contains the functionality used to implement buttons.
+		     &lt;p&gt; 
+		     
+		 
+	    </description> 
+        </package>
+        
+        
+        
+<package name="qnx.fuse.ui.listClasses"> 
+	    
+<shortDescription> 
+		 
+		    Provides various list type functionality including basic list, tile list, section lists  and drop down components.
+
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		    The &lt;b&gt;qnx.fuse.ui.listClasses&lt;/b&gt; package provides list functionality for your application. All 
+		    list types are based on the basic List class. There are many different list types, each of which performs
+		    a unique function. For example, the drop down list allows you to select a value from a list of choices while
+		    the round list provides a scrolling list that continues to scroll after the starting cell has been reached. 
+		 
+	    </description> 
+       </package> 
+       
+        
+       
+<package name="qnx.fuse.ui.media"> 
+	    
+<shortDescription> 
+		 
+		    Provides user-interface functionality for the media player. This package provides classes for 
+		    media player control and customization of media player interactions. 
+
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		    The &lt;b&gt;qnx.fuse.ui.media&lt;/b&gt; package provides user-interface functionality for the media player. This 
+		    package provides classes for media player control and customization of media player interactions.  
+
+		 
+	    </description> 
+        </package> 
+        
+        
+        
+<package name="qnx.fuse.ui.progress"> 
+	    
+<shortDescription> 
+		 
+		    Provides progress indicator functionality. The progress
+		    indicator provides temporal feedback during time-consuming or processor-intensive operations.
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		    The &lt;b&gt;qnx.fuse.ui.progress&lt;/b&gt; package provides progress indicator functionality. The progress
+		    indicator provides temporal feedback during time-consuming or processor-intensive operations.
+		 
+	    </description> 
+        </package>   
+        
+        
+  	
+<package name="qnx.fuse.ui.picker"> 
+	    
+<shortDescription> 
+		 
+	    	Provides picker functionality for your application.
+	   	The picker is a specialized list mechanism that allows you to select items from a set of scrolling cells. The 
+	   	picker is useful for displaying complex information and for allowing the user to select data from multiple scrolling 
+	   	columns, such as birth dates.
+
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		The &lt;b&gt;qnx.fuse.ui.picker&lt;/b&gt; package provides picker functionality for your application.
+		The picker is a specialized list mechanism that allows you to select items from a set of scrolling cells. The 
+		picker is useful for displaying complex information and for allowing the user to select data from multiple scrolling 
+	   	columns, such as birth dates.
+		 
+	    </description> 
+	</package>   
+	
+	    
+  	
+<package name="qnx.fuse.ui.expandablecontrol"> 
+	    
+<shortDescription> 
+		 
+	    	Provides the base classes for DropDown and Picker.
+	   The ExpandableControl base class can be subclassed to supply custom content in the expandable area.
+
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		The &lt;b&gt;qnx.fuse.ui.expandablecontrol&lt;/b&gt; package provides the base classes for DropDown and Picker.
+		 The ExpandableControl base class can be subclassed to supply custom content in the expandable area.
+		 
+	    </description> 
+	</package>
+	
+	   
+  	
+<package name="qnx.fuse.ui.dialog"> 
+	    
+<shortDescription> 
+		 
+	    	Provides a set of pre-defined dialogs for your application.
+			The DialogBase class can be used to create custom dialogs.
+
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		The &lt;b&gt;qnx.fuse.ui.dialog&lt;/b&gt; package provides a set of pre-defined dialogs for your application.
+		The DialogBase class can be used to create custom dialogs.
+		 
+	    </description> 
+	</package>
+	
+	  
+  	
+<package name="qnx.fuse.ui.dialog.data"> 
+	    
+<shortDescription> 
+		 
+	    	Provides data classes for dialogs.
+
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		The &lt;b&gt;qnx.fuse.ui.dialog.data&lt;/b&gt; package provides data classes for dialogs.
+		 
+	    </description> 
+	</package>
+	
+	
+  	
+<package name="qnx.fuse.ui.skins"> 
+	    
+<shortDescription> 
+		 
+		    Contains basic component skin implementations. The skins classes provide a customizable, 
+		    consistent, look and feel for the SDK component set.  
+
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		
+		&lt;h1&gt;Understanding skins&lt;/h1&gt;
+			&lt;p&gt;
+			    The BlackBerry Tablet OS contains a set of skin classes that provide a customizable and consistent, look and feel
+			    for your application. The BlackBerry Tablet OS defines two distinct color themes: light and dark. The tablet uses the light 
+			    themed component skins by default. 
+		    &lt;/p&gt;
+		    &lt;p&gt;
+			    Each UI component in the BlackBerry Tablet OS was designed to enable a specific user-interaction. For example, the picker is useful
+			    for inputting complex numbers such as dates or IP addresses. The user can expand the picker
+			    component in order to scroll through a set of vertical scrolling lists. Because UI components vary in their complexity, most UI components
+			    differ from one another in the way that they implement skinning. For example, a basic button 
+			    component is simple to skin when compared to a section tile list or a picker, both of which are comprised of many parts. 
+		     &lt;p&gt;
+			    Each skin object consists of one or more graphic assets, where a graphic asset provides the bitmap or vector data
+			    that is used to render each state of the skin. For example, a button skin should contain assets to define the up, down, selected,
+			    and disabled states that appear when the user interacts with the button. These component states are defined in 
+			    &lt;code&gt;qnx.fuse.ui.skins.SkinStates&lt;/code&gt;. An asset uses 9 slice scaling which allows it to be resized with little or no distortion.
+		    &lt;/p&gt;
+		    
+		   
+		    		    
+		   
+		    &lt;p&gt;
+			    Most skins in the SDK derive from the &lt;code&gt;qnx.fuse.ui.skins.UISkin&lt;/code&gt; class. The &lt;code&gt;qnx.fuse.ui.skins.UISkin&lt;/code&gt; class
+			    registers skins for certain states and handles the state changes so that the appropriate skin is associated with the current state. 
+			    All skinnable UI component parts in the SDK use one of the following skin types:
+		     &lt;/p&gt;
+		    &lt;table class="summaryTable" cellpadding="3" cellspacing="0"&gt;
+		    &lt;tr&gt;
+		    	&lt;th width="30%" &gt;Skin type&lt;/th&gt;
+		    	&lt;th width="70%" &gt;Description &lt;/th&gt;
+		    &lt;tr&gt;
+		    
+		    &lt;tr class="prow0" &gt;
+		    		    		    
+		    	    &lt;td&gt;
+		    	    &lt;code&gt;ICellRenderer&lt;/code&gt;
+		    	    &lt;/td&gt;
+		    	    
+		    	    &lt;td&gt;
+		    	    The &lt;code&gt;ICellRenderer&lt;/code&gt; class is used to render the cells in all list types. When you create a 
+		    	    skin for the list class, your skin must implement &lt;code&gt;ICellRenderer&lt;/code&gt; interface.
+		    	    &lt;/td&gt;		    		    
+		    		    
+		    &lt;/tr&gt;
+		    
+		     &lt;tr class="prow1" &gt;
+		    		    		    		    
+		    	    &lt;td&gt;
+		    	    &lt;code&gt;ISkin&lt;/code&gt;
+		    	    &lt;/td&gt;
+		    		    	    
+		    	    &lt;td&gt;
+		    	    The &lt;code&gt;ISkin&lt;/code&gt; class is the default skin for all components such as buttons and thumbs. When 
+		    	    you create a skin for a button class, your skin must implement &lt;code&gt;ISkin&lt;/code&gt; interface.
+		    	    &lt;/td&gt;		    		    
+		    		    		    
+		    &lt;/tr&gt;
+		    
+		    &lt;/table&gt;
+		   		  
+		    &lt;p&gt;
+		    In order to create your own custom skin, you must (at the very least) create a skin class that implements the &lt;code&gt;qnx.fuse.ui.skins.ISkin&lt;/code&gt;
+		    interface. The quickest way to create a custom skin is to inherit from the &lt;/code&gt;qnx.fuse.ui.skins.UISkin&lt;/code&gt;
+		    class to take advantage of the base functionality for handling state changes and for associating skins with states. To create a custom
+		    skin, create a class that extends &lt;code&gt;qnx.fuse.ui.skins.UISkin&lt;/code&gt;. Assets for each state are created on demand as needed. This helps reduce 
+		the memory foot print of your application, as it doesn't create assets for states that the user may never see. Once an asset has been created, it is best practice to 
+		store that asset in a local variable and return it on further requests instead of re-creating the asset.
+		    &lt;p&gt;
+		    In the following code
+		    listing, the &lt;code&gt;getSkinForState()&lt;/code&gt; function creates assets for the specified state on demand:
+ 		    &lt;/p&gt;
+		    
+    &lt;listing &gt;
+     &lt;pre&gt;
+override protected function getSkinForState(state : String) : DisplayObject
+{
+	var asset : DisplayObject;
+
+	switch (state)
+	{
+		case SkinStates.UP:
+			if( upSkin == null )
+			{
+				upSkin = new Sprite();
+				upSkin.graphics.beginFill(0xFF6600);
+				upSkin.graphics.drawRect(0,0,200,200);
+				upSkin.graphics.endFill();
+			}
+			asset = upSkin;
+			break;
+		case SkinStates.DOWN:
+		case SkinStates.DOWN_SELECTED:
+		case SkinStates.SELECTED:
+			if( downSkin == null )
+			{
+				downSkin = new Sprite();
+				downSkin.graphics.beginFill(0x333333);
+				downSkin.graphics.drawRect(0,0,200,200);
+				downSkin.graphics.endFill();
+			}
+			asset = downSkin;
+			break;
+		case SkinStates.DISABLED:
+		case SkinStates.DISABLED_SELECTED:
+			if( disabledSkin == null )
+			{
+				disabledSkin = new Sprite();
+				disabledSkin.graphics.beginFill(0xCC0000);
+				disabledSkin.graphics.drawRect(0,0,200,200);
+				disabledSkin.graphics.endFill();
+			}
+			asset = disabledSkin;
+			break;
+	}
+	return asset;
+}
+    &lt;/pre&gt;
+    &lt;/listing&gt;
+		    
+		 &lt;p&gt;
+		    The following listing shows a complete, custom skin class for a basic button. In the overridden &lt;code&gt;getSkinForState()&lt;/code&gt; function, 
+		    the skin assets are instantiated as Sprites and are drawn using the Flash drawing API: 
+		  &lt;/p&gt;
+		  
+&lt;listing &gt;
+ &lt;pre&gt;
+  package
+  {
+	import qnx.fuse.ui.skins.SkinAssets;
+	import qnx.fuse.ui.skins.UISkin;
+	import qnx.fuse.ui.skins.SkinStates;
+
+
+	import flash.display.Sprite;
+
+	
+	public class CustomButtonSkin extends UISkin 
+	{
+		/**@private**/
+		protected var upSkin:Sprite;
+		/**@private**/
+		protected var disabledSkin:Sprite;
+	    /**@private**/
+		protected var downSkin:Sprite;
+
+
+		/**
+		 *Create a custom button skin
+		 */
+		public function CustomButtonSkin() 
+		{
+			super( );
+		}
+
+	  
+		override protected function getSkinForState(state : String) : DisplayObject
+		{
+			var asset : DisplayObject;
+
+			switch (state)
+			{
+				case SkinStates.UP:
+					if( upSkin == null )
+					{
+						upSkin = new Sprite();
+						upSkin.graphics.beginFill(0xFF6600);
+						upSkin.graphics.drawRect(0,0,200,200);
+						upSkin.graphics.endFill();
+					}
+					asset = upSkin;
+					break;
+				case SkinStates.DOWN:
+				case SkinStates.DOWN_SELECTED:
+				case SkinStates.SELECTED:
+					if( downSkin == null )
+					{
+						downSkin = new Sprite();
+						downSkin.graphics.beginFill(0x333333);
+						downSkin.graphics.drawRect(0,0,200,200);
+						downSkin.graphics.endFill();
+					}
+					asset = downSkin;
+					break;
+				case SkinStates.DISABLED:
+				case SkinStates.DISABLED_SELECTED:
+					if( disabledSkin == null )
+					{
+						disabledSkin = new Sprite();
+						disabledSkin.graphics.beginFill(0xCC0000);
+						disabledSkin.graphics.drawRect(0,0,200,200);
+						disabledSkin.graphics.endFill();
+					}
+					asset = disabledSkin;
+					break;
+			}
+			return asset;
+		}
+	}
+  }
+&lt;/pre&gt;
+&lt;/listing&gt;
+    		
+    		    		
+    		&lt;p&gt;
+    		Once you have created a custom skin, you can apply the skin to a UI component by calling the appropriate skinning method. For example, 
+    		to apply a skin to a button, you can pass the skin class that you just created into the &lt;code&gt;setSkin()&lt;/code&gt; method:
+    		&lt;/p&gt;
+&lt;listing&gt; 
+&lt;pre&gt;
+   		
+myButton = new Button()
+myButton.width = 100;
+myButton.setSkin(CustomButtonSkin);
+addChild(myButton);
+&lt;/pre&gt;
+&lt;/listing&gt;
+    		
+    		  &lt;p&gt;
+			For an example of a custom &lt;code&gt;CellRenderer&lt;/code&gt; skin that is used to create a custom List, see the example
+			in the 
+			&lt;a href="../listClasses/AlternatingCellRenderer.html#includeExamplesSummary" onclick="javascript:loadClassListFrame('class-list.html');"&gt;AlternatingCellRenderer&lt;/a&gt; 
+			class documentation.
+		    &lt;/p&gt;
+    		
+    		
+		     &lt;p&gt;
+		    For a background on the skin assets that are shipped with this SDK, see 
+		    &lt;a href="../../../../skins-detail-fuse.html" onclick="javascript:loadClassListFrame('class-list.html');"&gt;Skin assets&lt;/a&gt;.
+		    &lt;/p&gt;
+		   
+		 
+	    </description> 
+</package> 
+
+	
+  	
+<package name="qnx.fuse.ui.skins.buttons"> 
+	    
+<shortDescription> 
+		 
+		  Contains skin implementations for all button components.
+
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		 The &lt;b&gt;qnx.fuse.ui.skins.buttons&lt;/b&gt; package contains skin implementations for all button components.
+		 
+	    </description> 
+	</package> 
+	
+	
+  	
+<package name="qnx.fuse.ui.skins.animation"> 
+	    
+<shortDescription> 
+		 
+		  Contains animations that can be used to transition skins between states.
+
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		 The &lt;b&gt;qnx.fuse.ui.skins.animation&lt;/b&gt; package contains animations that can be used to transition skins between states.
+		 
+	    </description> 
+	</package>
+	
+	
+	
+  	
+<package name="qnx.fuse.ui.skins.expandablecontrol"> 
+	    
+<shortDescription> 
+		 
+		  Contains skins for the expandable control classes.
+
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		 The &lt;b&gt;qnx.fuse.ui.skins.expandablecontrol&lt;/b&gt; package contains skins for the expandable control classes.
+		 
+	    </description> 
+	</package>
+	
+	
+	
+  	
+<package name="qnx.fuse.ui.skins.dialog"> 
+	    
+<shortDescription> 
+		 
+		   Contains skin implementations for the dialogs.
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		    The &lt;b&gt;qnx.fuse.ui.skins.dialog&lt;/b&gt; package contains skin implementations for the dialogs.
+		 
+	    </description> 
+	</package>
+	
+	
+	
+  	
+<package name="qnx.fuse.ui.core"> 
+	    
+<shortDescription> 
+		 
+		   Contains the functionality that enables you to position
+		   UI components on a view. The &lt;code&gt;Container&lt;/code&gt; class is the "container" that is used
+		   to group and position interface components, while the UIComponent class is the base class for all
+		   components.
+
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		   The &lt;b&gt;qnx.fuse.ui.core&lt;/b&gt; package contains the functionality that enables you to position
+		   UI components on a view. The &lt;code&gt;Container&lt;/code&gt; class is the "container" that is used
+		   to group and position interface components, while the UIComponent class is the base class for all
+		   components.
+		 
+	    </description> 
+	</package> 
+
+	
+ 	
+<package name="qnx.fuse.ui.skins.listClasses"> 
+	    
+<shortDescription> 
+		 
+		   Contains skin implementations for all list components. 
+
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		 The &lt;b&gt;qnx.fuse.ui.skins.listClasses&lt;/b&gt; package contains skin implementations for all 
+		    list components. 
+		 
+	    </description> 
+	</package> 
+
+	
+ 	
+<package name="qnx.fuse.ui.skins.media"> 
+	    
+<shortDescription> 
+		 
+		   Contains skin implementations for all components that are related to the media player. 
+
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		 The &lt;b&gt;qnx.fuse.ui.skins.media&lt;/b&gt; package contains skin implementations for all 
+		 components that are related to the media player. 
+		 
+	    </description> 
+	</package> 
+
+	
+	
+<package name="qnx.fuse.ui.skins.picker"> 
+	    
+<shortDescription> 
+		 
+		    Contains skin implementations for the picker component. 
+
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		The &lt;b&gt;qnx.fuse.ui.skins.progress&lt;/b&gt; package contains skin implementations for the picker component. 
+		 
+	    </description> 
+	</package> 
+
+	
+ 	
+<package name="qnx.fuse.ui.skins.progress"> 
+	    
+<shortDescription> 
+		 
+		    Contains skin implementations for the progress bar and progress indicator. 
+
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		The &lt;b&gt;qnx.fuse.ui.skins.progress&lt;/b&gt; package contains skin implementations for the progress bar 
+		    and progress indicator. 
+		 
+	    </description> 
+	</package> 
+
+		
+ 	
+<package name="qnx.fuse.ui.skins.slider"> 
+	    
+<shortDescription> 
+		 
+		    Contains skin implementations for the slider control. 
+
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		 The &lt;b&gt;qnx.fuse.ui.skins.slider&lt;/b&gt; package contains skin implementations for the slider control. 
+
+		 
+	    </description> 
+	</package> 
+
+	
+ 	
+<package name="qnx.fuse.ui.skins.text"> 
+	    
+<shortDescription> 
+		 
+		    Contains skin implementations for text input field components. 
+
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		 The &lt;b&gt;qnx.fuse.ui.skins.text&lt;/b&gt; package contains skin implementations for text input field
+		    components. 
+		 
+	    </description> 
+	</package>
+
+	
+	
+<package name="qnx.fuse.ui.slider"> 
+		
+<shortDescription> 
+		     
+		      Contains two slider controls - a basic slider and a volume slider. The 
+		      slider control allows the user to select a value by adjusting the position of a 
+		      thumb control along a track. For example, the slider control might be used to adjust brightness or size. 
+    
+		      
+		       
+		</shortDescription> 
+		
+<description> 
+		     
+		      The &lt;b&gt;qnx.fuse.ui.slider&lt;/b&gt; package defines two slider controls - a basic slider and a volume slider. The 
+		      slider control allows the user to select a value by adjusting the position of a 
+		      thumb control along a track. For example, the slider control might be used to adjust brightness or size. 
+		       
+		</description> 
+	</package>
+	
+	
+        
+<package name="qnx.fuse.ui.text"> 
+		
+<shortDescription> 
+		     
+			Provides the ability to display text. This includes basic labels and text input fields.  
+		     
+		</shortDescription> 
+		
+<description> 
+		     
+		      The &lt;b&gt;qnx.fuse.ui.text&lt;/b&gt; package provides the ability to display text. 
+		      This includes basic labels and text input fields.  
+		     
+		</description> 
+        </package>
+        
+    
+        
+        
+<package name="qnx.fuse.ui.theme"> 
+	    
+<shortDescription> 
+		 
+		    Provides the ability to create and enable
+		    themes on a device. A theme is a customizable look and feel that you can apply to each
+		    component in the system.
+
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		The &lt;b&gt;qnx.fuse.ui.theme&lt;/b&gt; package provides the ability to create and enable
+		themes on a device. A theme is a customizable look and feel that you can apply to each
+		component in the system.
+		&lt;p&gt;
+		The &lt;b&gt;ThemeGlobals&lt;/b&gt; class contains constants that define the various skinnable
+		UI assets in an application of in the HMI.
+		&lt;p&gt;
+		 
+	    </description> 
+        </package>   
+       
+  	
+		
+        
+<package name="qnx.fuse.ui.display"> 
+	    
+<shortDescription> 
+		 
+		    Contains the classes that govern the display. It contains classes that enable you to manipulate 
+		    and view images.
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		    The &lt;b&gt;qnx.fuse.ui.display&lt;/b&gt; package contains the classes that govern the display. It contains 
+		    classes that enable you to manipulate and view images.
+		 
+	    </description> 
+        </package>
+		
+		        
+       
+<package name="qnx.fuse.ui.events"> 
+    	
+<shortDescription> 
+	 
+		   Contains event functionality for all user interface components. This includes
+		   specialized event types for each of the list classes as well as event classes for media controls, toggle switches and
+		   sliders.
+	 
+    	</shortDescription> 
+    	
+<description> 
+	 
+		    The &lt;b&gt;qnx.fuse.ui.events&lt;/b&gt; package contains event functionality for all user interface components. This includes
+		    specialized event types for each of the list classes as well as event classes for media controls, toggle switches and
+		    sliders.
+	 
+   	 </description> 
+        </package>
+
+		 
+       
+<package name="qnx.fuse.ui.utils"> 
+    	
+<shortDescription> 
+		 
+		   Contains UI-related utilities.
+		 
+    	</shortDescription> 
+    	
+<description> 
+		 
+		    The &lt;b&gt;qnx.fuse.ui.utils&lt;/b&gt; package contains ui utilities 
+		 
+   	 </description> 
+        </package>
+
+	 
+		       
+<package name="qnx.fuse.ui.geom"> 
+			    
+<shortDescription> 
+				 
+				    Contains the <code>EdgeMetrics</code> class that returns nine-slice scaling information about the scaled edges of a skin.
+
+	
+				 
+			    </shortDescription> 
+			    
+<description> 
+				 
+  				The &lt;b&gt;qnx.fuse.ui.geom&lt;/b&gt; package contains the &lt;code&gt;EdgeMetrics&lt;/code&gt; class that returns nine-slice scaling information about
+  				the scaled edges of a skin. 
+				 
+			    </description> 
+        </package>
+
+		
+			 
+		       
+<package name="qnx.fuse.ui.managers"> 
+			    
+<shortDescription> 
+				 
+				   
+	
+				 
+			    </shortDescription> 
+			    
+<description> 
+				 
+  				
+				 
+			    </description> 
+        </package>
+		
+	
+	
+		        
+	
+<package name="qnx.fuse.ui.layouts"> 
+	    
+<shortDescription> 
+		 
+		    Contains the base classes that define layouts. Layouts are used to position controls according to a predefined and configurable pattern, within a container. 
+
+
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		 The &lt;b&gt;qnx.fuse.ui.layouts&lt;/b&gt; package contains the base classes that define layouts. Layouts are used to position controls according to a predefined and configurable pattern, within a container. 
+		 
+	    </description> 
+	</package> 
+	
+	
+		        
+	
+<package name="qnx.fuse.ui.layouts.gridLayout"> 
+	    
+<shortDescription> 
+		 
+		    Contains the classes that define and enable the grid layout. The <code>GridLayout</code> type positions controls according to a grid made up
+			of horizontal and vertical columns.
+
+
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+		The &lt;b&gt;qnx.fuse.ui.layouts.gridLayout&lt;/b&gt; package contains the classes that define and enable the grid layout. The <code>GridLayout</code> type positions controls according to a grid made up
+		of horizontal and vertical columns.
+		 
+	    </description> 
+	</package> 
+	
+		        
+	
+<package name="qnx.fuse.ui.layouts.stackLayout"> 
+	    
+<shortDescription> 
+		 
+					Contains the classes that define and enable the stack layout. In the StackLayout class, controls overlap each other such that 
+					each control is positioned (according to z-order) in a vertical stack. 
+
+
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+					The &lt;b&gt;qnx.fuse.ui.layouts.stackLayout&lt;/b&gt; package contains the classes that define and enable the stack layout. In the StackLayout class, controls overlap each other such that 
+					each control is positioned (according to z-order) in a vertical stack. 
+		 
+	    </description> 
+	</package> 
+	
+		        
+	
+<package name="qnx.fuse.ui.layouts.rowLayout"> 
+	    
+<shortDescription> 
+		 
+					Contains the classes that define and enable the row layout, where controls are positioned in rows. On resize operations, rows can automatically wrap to add or remove
+					rows of controls.
+
+
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+					The &lt;b&gt;qnx.fuse.ui.layouts.rowLayout&lt;/b&gt; package contains the classes that define and enable the row layout, where controls are positioned in rows. On resize operations, rows can automatically wrap to add or remove
+					rows of controls.
+		 
+	    </description> 
+	</package> 
+	
+	
+		        
+	
+<package name="qnx.net"> 
+	    
+<shortDescription> 
+		 
+						Contains the classes that enable you to monitor device network connections.  
+
+
+		 
+	    </shortDescription> 
+	    
+<description> 
+		 
+			The &lt;b&gt;qnx.net&lt;/b&gt; package contains the classes that enable you to monitor device network connections.  
+		 
+	    </description> 
+	</package> 
+        
+    </packages> 
+</overviews>

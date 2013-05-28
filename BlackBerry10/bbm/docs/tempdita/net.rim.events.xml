@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><apiPackage id="net.rim.events"><apiName>net.rim.events</apiName><apiDetail/><apiClassifier id="net.rim.events:BBMUserProfileEvent"><apiName>BBMUserProfileEvent</apiName><shortdesc>
+	 BBMUserProfileEvent events are dispatched by the BBMManager class when the users profile is updated.</shortdesc><prolog><asMetadata/><asCustoms><bbtags><version>10.2</version>
+     <foundin>BBM.ane</foundin>
+	 </bbtags></asCustoms></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>flash.events:Event</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 <codeph>BBMUserProfileEvent</codeph> events are dispatched by the <codeph>BBMManager</codeph> class when the users profile is updated.
+	 </apiDesc></apiClassifierDetail><adobeApiEvent id="net.rim.events:BBMUserProfileEvent:UPDATE_userProfileUpdate"><apiName>userProfileUpdate</apiName><prolog/><adobeApiEventDetail><adobeApiEventDef><apiEventType>net.rim.events:BBMUserProfileEvent:UPDATE</apiEventType><adobeApiEventClassifier>net.rim.events:BBMUserProfileEvent</adobeApiEventClassifier><apiDefinedEvent/></adobeApiEventDef></adobeApiEventDetail></adobeApiEvent><apiConstructor id="net.rim.events:BBMUserProfileEvent:BBMUserProfileEvent"><apiName>BBMUserProfileEvent</apiName><shortdesc>
+		 Creates a BBMUserProfileEvent instance.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>type</apiItemName><apiType value="String"/><apiDesc>The type of event.
+		 </apiDesc></apiParam><apiParam><apiItemName>updateType</apiItemName><apiType value="int"/><apiData>-1</apiData><apiDesc>The type of update.
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Creates a <codeph>BBMUserProfileEvent</codeph> instance.
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiValue id="net.rim.events:BBMUserProfileEvent:UPDATE"><apiName>UPDATE</apiName><shortdesc>
+		 Event type dispatched when the user profile is updated.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>userProfileUpdate</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 Event type dispatched when the user profile is updated.
+		 <p>The BBMUserProfileEvent.UPDATE constant defines the value of the
+	      <codeph>type</codeph> property of the event object for an
+	      <codeph>userProfileUpdate</codeph> event.</p>
+	     	      <p>The properties of the event object have the following values:</p>
+	      <adobetable class="innertable">
+	         
+	         
+	         
+	         
+	         
+	         
+	      <tgroup cols="2"><thead><row><entry>Property</entry><entry>Value</entry></row></thead><tbody><row><entry><codeph>bubbles</codeph></entry><entry>false</entry></row><row><entry><codeph>cancelable</codeph></entry><entry>false</entry></row><row><entry><codeph>currentTarget</codeph></entry><entry>The object that is actively processing the Event object with an event listener.</entry></row><row><entry><codeph>type</codeph></entry><entry>BBMUserProfileEvent.UPDATE</entry></row><row><entry><codeph>updateType</codeph></entry><entry>What was updated in the users profile.</entry></row></tbody></tgroup></adobetable>
+	     	      </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.events:BBMUserProfileEvent:updateType:get"><apiName>updateType</apiName><shortdesc>
+		 Defines what was updated for the specified user profile.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="int"/></apiValueDef><apiDesc>
+		 Defines what was updated for the specified user profile.
+		 <p>
+		 Valid values can be found in <codeph>BBMContactupdateTypes</codeph>
+		 </p>
+		 </apiDesc></apiValueDetail><related-links><link href="" invalidHref="net.rim.events.BBMContactUpdateTypes.xml"><linktext>BBMContactUpdateTypes</linktext></link></related-links></apiValue></apiClassifier><apiClassifier id="net.rim.events:BBMRegisterEvent"><apiName>BBMRegisterEvent</apiName><shortdesc>
+	 BBMRegisterEvent events are dispatched by the BBMManager class when registration events occur.</shortdesc><prolog><asMetadata/><asCustoms><bbtags><version>10.2</version>
+     <foundin>BBM.ane</foundin>
+     </bbtags></asCustoms></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>flash.events:Event</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 <codeph>BBMRegisterEvent</codeph> events are dispatched by the <codeph>BBMManager</codeph> class when registration events occur.
+	 </apiDesc></apiClassifierDetail><related-links><link href="net.rim.bbm.xml#BBMManager"><linktext>BBMManager</linktext></link></related-links><adobeApiEvent id="net.rim.events:BBMRegisterEvent:DENIED_register_denied"><apiName>register_denied</apiName><prolog/><adobeApiEventDetail><adobeApiEventDef><apiEventType>net.rim.events:BBMRegisterEvent:DENIED</apiEventType><adobeApiEventClassifier>net.rim.events:BBMRegisterEvent</adobeApiEventClassifier><apiDefinedEvent/></adobeApiEventDef></adobeApiEventDetail></adobeApiEvent><adobeApiEvent id="net.rim.events:BBMRegisterEvent:PENDING_register_pending"><apiName>register_pending</apiName><prolog/><adobeApiEventDetail><adobeApiEventDef><apiEventType>net.rim.events:BBMRegisterEvent:PENDING</apiEventType><adobeApiEventClassifier>net.rim.events:BBMRegisterEvent</adobeApiEventClassifier><apiDefinedEvent/></adobeApiEventDef></adobeApiEventDetail></adobeApiEvent><adobeApiEvent id="net.rim.events:BBMRegisterEvent:SUCCESS_register_success"><apiName>register_success</apiName><prolog/><adobeApiEventDetail><adobeApiEventDef><apiEventType>net.rim.events:BBMRegisterEvent:SUCCESS</apiEventType><adobeApiEventClassifier>net.rim.events:BBMRegisterEvent</adobeApiEventClassifier><apiDefinedEvent/></adobeApiEventDef></adobeApiEventDetail></adobeApiEvent><adobeApiEvent id="net.rim.events:BBMRegisterEvent:UNREGISTERED_register_unregistered"><apiName>register_unregistered</apiName><prolog/><adobeApiEventDetail><adobeApiEventDef><apiEventType>net.rim.events:BBMRegisterEvent:UNREGISTERED</apiEventType><adobeApiEventClassifier>net.rim.events:BBMRegisterEvent</adobeApiEventClassifier><apiDefinedEvent/></adobeApiEventDef></adobeApiEventDetail></adobeApiEvent><apiConstructor id="net.rim.events:BBMRegisterEvent:BBMRegisterEvent"><apiName>BBMRegisterEvent</apiName><shortdesc>
+		 Creates a BBMRegisterEvent instance.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>type</apiItemName><apiType value="String"/><apiDesc>The type of event.
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Creates a <codeph>BBMRegisterEvent</codeph> instance.
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiValue id="net.rim.events:BBMRegisterEvent:DENIED"><apiName>DENIED</apiName><shortdesc>
+		 Event type dispatched when access to the BBM Social Platform is denied.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>register_denied</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 Event type dispatched when access to the BBM Social Platform is denied. This is usually the result of the user turning off BBM in the application permissions.
+		 <p>The BBMRegisterEvent.DENIED constant defines the value of the
+	      <codeph>type</codeph> property of the event object for an
+	      <codeph>register_denied</codeph> event.</p>
+	     	      <p>The properties of the event object have the following values:</p>
+	      <adobetable class="innertable">
+	         
+	         
+	         
+	         
+	         
+	      <tgroup cols="2"><thead><row><entry>Property</entry><entry>Value</entry></row></thead><tbody><row><entry><codeph>bubbles</codeph></entry><entry>false</entry></row><row><entry><codeph>cancelable</codeph></entry><entry>false</entry></row><row><entry><codeph>currentTarget</codeph></entry><entry>The object that is actively processing the Event object with an event listener.</entry></row><row><entry><codeph>type</codeph></entry><entry>BBMRegisterEvent.DENIED</entry></row></tbody></tgroup></adobetable>
+	     	      </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.events:BBMRegisterEvent:PENDING"><apiName>PENDING</apiName><shortdesc>
+		 Event type dispatched when the application is in the process of registering with the BBM Social Platform.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>register_pending</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 Event type dispatched when the application is in the process of registering with the BBM Social Platform.
+		 <p>The BBMRegisterEvent.PENDING constant defines the value of the
+	      <codeph>type</codeph> property of the event object for an
+	      <codeph>register_pending</codeph> event.</p>
+	     	      <p>The properties of the event object have the following values:</p>
+	      <adobetable class="innertable">
+	         
+	         
+	         
+	         
+	         
+	      <tgroup cols="2"><thead><row><entry>Property</entry><entry>Value</entry></row></thead><tbody><row><entry><codeph>bubbles</codeph></entry><entry>false</entry></row><row><entry><codeph>cancelable</codeph></entry><entry>false</entry></row><row><entry><codeph>currentTarget</codeph></entry><entry>The object that is actively processing the Event object with an event listener.</entry></row><row><entry><codeph>type</codeph></entry><entry>BBMRegisterEvent.PENDING</entry></row></tbody></tgroup></adobetable>
+	     	      </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.events:BBMRegisterEvent:SUCCESS"><apiName>SUCCESS</apiName><shortdesc>
+		 Event type dispatched when the application has successfully registered with the BBM Social Platform.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>register_success</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 Event type dispatched when the application has successfully registered with the BBM Social Platform.
+		 <p>The BBMRegisterEvent.SUCCESS constant defines the value of the
+	      <codeph>type</codeph> property of the event object for an
+	      <codeph>register_success</codeph> event.</p>
+	     	      <p>The properties of the event object have the following values:</p>
+	      <adobetable class="innertable">
+	         
+	         
+	         
+	         
+	         
+	      <tgroup cols="2"><thead><row><entry>Property</entry><entry>Value</entry></row></thead><tbody><row><entry><codeph>bubbles</codeph></entry><entry>false</entry></row><row><entry><codeph>cancelable</codeph></entry><entry>false</entry></row><row><entry><codeph>currentTarget</codeph></entry><entry>The object that is actively processing the Event object with an event listener.</entry></row><row><entry><codeph>type</codeph></entry><entry>BBMRegisterEvent.SUCCESS</entry></row></tbody></tgroup></adobetable>
+	     	      </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.events:BBMRegisterEvent:UNREGISTERED"><apiName>UNREGISTERED</apiName><shortdesc>
+		 Event type dispatched when the application is not registered with the BBM Social Platform.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>register_unregistered</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 Event type dispatched when the application is not registered with the BBM Social Platform.
+		 <p>The BBMRegisterEvent.UNREGISTERED constant defines the value of the
+	      <codeph>type</codeph> property of the event object for an
+	      <codeph>register_unregistered</codeph> event.</p>
+	     	      <p>The properties of the event object have the following values:</p>
+	      <adobetable class="innertable">
+	         
+	         
+	         
+	         
+	         
+	      <tgroup cols="2"><thead><row><entry>Property</entry><entry>Value</entry></row></thead><tbody><row><entry><codeph>bubbles</codeph></entry><entry>false</entry></row><row><entry><codeph>cancelable</codeph></entry><entry>false</entry></row><row><entry><codeph>currentTarget</codeph></entry><entry>The object that is actively processing the Event object with an event listener.</entry></row><row><entry><codeph>type</codeph></entry><entry>BBMRegisterEvent.UNREGISTERED</entry></row></tbody></tgroup></adobetable>
+	     	      </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="net.rim.events:BBMContactEvent"><apiName>BBMContactEvent</apiName><shortdesc>
+	 BBMContactEvent events are dispatched by the BBMManager class when contacts are updated.</shortdesc><prolog><asMetadata/><asCustoms><bbtags><version>10.2</version>
+     <foundin>BBM.ane</foundin>
+	 </bbtags></asCustoms></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>flash.events:Event</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 <codeph>BBMContactEvent</codeph> events are dispatched by the <codeph>BBMManager</codeph> class when contacts are updated.
+	 </apiDesc></apiClassifierDetail><adobeApiEvent id="net.rim.events:BBMContactEvent:CONTACT_LIST_contact_list"><apiName>contact_list</apiName><prolog/><adobeApiEventDetail><adobeApiEventDef><apiEventType>net.rim.events:BBMContactEvent:CONTACT_LIST</apiEventType><adobeApiEventClassifier>net.rim.events:BBMContactEvent</adobeApiEventClassifier><apiDefinedEvent/></adobeApiEventDef></adobeApiEventDetail></adobeApiEvent><adobeApiEvent id="net.rim.events:BBMContactEvent:CONTACT_UPDATE_contact_update"><apiName>contact_update</apiName><prolog/><adobeApiEventDetail><adobeApiEventDef><apiEventType>net.rim.events:BBMContactEvent:CONTACT_UPDATE</apiEventType><adobeApiEventClassifier>net.rim.events:BBMContactEvent</adobeApiEventClassifier><apiDefinedEvent/></adobeApiEventDef></adobeApiEventDetail></adobeApiEvent><apiConstructor id="net.rim.events:BBMContactEvent:BBMContactEvent"><apiName>BBMContactEvent</apiName><shortdesc>
+		 Creates a BBMContactEvent instance.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>type</apiItemName><apiType value="String"/><apiDesc>The type of event.
+		 </apiDesc></apiParam><apiParam><apiItemName>contact</apiItemName><apiOperationClassifier>net.rim.bbm:BBMContact</apiOperationClassifier><apiData>null</apiData><apiDesc>The contact for the event.
+		 </apiDesc></apiParam><apiParam><apiItemName>updateType</apiItemName><apiType value="int"/><apiData>-1</apiData><apiDesc>The updateType of the event.
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Creates a <codeph>BBMContactEvent</codeph> instance.
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiValue id="net.rim.events:BBMContactEvent:CONTACT_LIST"><apiName>CONTACT_LIST</apiName><shortdesc>
+		 Event type dispatched when the contact list is retrieved from the BBM Social Platform servers.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>contact_list</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 Event type dispatched when the contact list is retrieved from the BBM Social Platform servers.
+		 <p>The BBMContactEvent.CONTACT_LIST constant defines the value of the
+	      <codeph>type</codeph> property of the event object for an
+	      <codeph>contact_list</codeph> event.</p>
+	     	      <p>The properties of the event object have the following values:</p>
+	      <adobetable class="innertable">
+	         
+	         
+	         
+	         
+	         
+	         
+	         
+	      <tgroup cols="2"><thead><row><entry>Property</entry><entry>Value</entry></row></thead><tbody><row><entry><codeph>bubbles</codeph></entry><entry>false</entry></row><row><entry><codeph>cancelable</codeph></entry><entry>false</entry></row><row><entry><codeph>contact</codeph></entry><entry>The contact property is null for this event type.</entry></row><row><entry><codeph>currentTarget</codeph></entry><entry>The object that is actively processing the Event object with an event listener.</entry></row><row><entry><codeph>type</codeph></entry><entry>BBMContactEvent.CONTACT_LIST</entry></row><row><entry><codeph>updateType</codeph></entry><entry>The updateType property is null for this event type.</entry></row></tbody></tgroup></adobetable>
+	     	      </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.events:BBMContactEvent:CONTACT_UPDATE"><apiName>CONTACT_UPDATE</apiName><shortdesc>
+		 Event type dispatched when a contact is updated.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>contact_update</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 Event type dispatched when a contact is updated.
+		 <p>The BBMContactEvent.CONTACT_UPDATE constant defines the value of the
+	      <codeph>type</codeph> property of the event object for an
+	      <codeph>contact_update</codeph> event.</p>
+	     	      <p>The properties of the event object have the following values:</p>
+	      <adobetable class="innertable">
+	         
+	         
+	         
+	         
+	         
+	         
+	         
+	      <tgroup cols="2"><thead><row><entry>Property</entry><entry>Value</entry></row></thead><tbody><row><entry><codeph>bubbles</codeph></entry><entry>false</entry></row><row><entry><codeph>cancelable</codeph></entry><entry>false</entry></row><row><entry><codeph>contact</codeph></entry><entry>The contact that was updated.</entry></row><row><entry><codeph>currentTarget</codeph></entry><entry>The object that is actively processing the Event object with an event listener.</entry></row><row><entry><codeph>type</codeph></entry><entry>BBMContactEvent.CONTACT_UPDATE</entry></row><row><entry><codeph>updateType</codeph></entry><entry>The property that of the contact that was updated.</entry></row></tbody></tgroup></adobetable>
+	     	      </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.events:BBMContactEvent:contact:get"><apiName>contact</apiName><shortdesc>
+		 The contact that was updated.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiValueClassifier>net.rim.bbm:BBMContact</apiValueClassifier></apiValueDef><apiDesc>
+		 The contact that was updated. 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="net.rim.events:BBMContactEvent:updateType:get"><apiName>updateType</apiName><shortdesc>
+		 Defines what was updated for the specified contact.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="int"/></apiValueDef><apiDesc>
+		 Defines what was updated for the specified contact.
+		 <p>
+		 Valid values can be found in <codeph>BBMContactupdateTypes</codeph>
+		 </p>
+		 </apiDesc></apiValueDetail><related-links><link href="" invalidHref="net.rim.events.BBMContactUpdateTypes.xml"><linktext>BBMContactUpdateTypes</linktext></link></related-links></apiValue></apiClassifier></apiPackage>

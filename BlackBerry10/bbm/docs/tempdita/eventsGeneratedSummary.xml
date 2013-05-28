@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<allClasses>
+   <apiPackage id="net.rim.bbm">
+      <apiName>net.rim.bbm</apiName>
+      <apiClassifier id="net.rim.bbm:BBMContactUpdateTypes">
+         <apiName>BBMContactUpdateTypes</apiName>
+         <shortdesc>
+	 The types of updates that a user or a contact can make to their BBM profile.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 The types of updates that a user or a contact can make to their BBM profile.
+	 <p>
+	 Update types are used to determine which property was updated when a <codeph>BBMContactEvent</codeph> event is dispatched.
+	 </p>
+	        </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="net.rim.bbm:BBMUserProfile">
+         <apiName>BBMUserProfile</apiName>
+         <shortdesc>
+	 Represents the device User in the BBM Social Platform.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 Represents the device User in the BBM Social Platform.
+	 <p>
+	              <codeph>BBMUserProfile</codeph> is a class that represents the device user in the BBM Social Platform. 
+	 The class provides getters and setters to attributes of the device User.
+	 </p>
+	        </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="net.rim.bbm:BBMContact">
+         <apiName>BBMContact</apiName>
+         <shortdesc>
+	 Represents a contact in the BBM Social Platform.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 Represents a contact in the BBM Social Platform.
+	 <p>
+	              <codeph>BBMContact</codeph> is a class that represents a contact accessible through the BBM Social Platform. 
+	 The class provides accessor methods to the main attributes of the contact including display name, message and status.
+	 </p>
+	        </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="net.rim.bbm:BBMManager">
+         <apiName>BBMManager</apiName>
+         <shortdesc>
+	 The BBMManager class is used to interact with the BBM Social Platform.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>flash.events:EventDispatcher</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 The <codeph>BBMManager</codeph> class is used to interact with the BBM Social Platform.
+	 <p>
+	 For example, you can:
+	 <ul>
+	                 <li>Invite BBM contacts to download your app by accessing a user's BBM contact list.</li>
+	                 <li>Update a user's BBM personal message, status, and avatar.</li>
+	                 <li>Add a customizable application box to a user's BBM profile to broadcast achievements or provide updates.</li>
+	              </ul>
+	           </p>
+	           <p>
+	 Applications wishing to use the <codeph>BBMManager</codeph> must ensure that their application includes the following permission in their bar-descriptor.xml file.
+	 
+	 <b>&lt;permission&gt;bbm_connect&lt;/permission&gt;</b>
+	           </p>
+	           <p>
+	 Connecting to the BBM Social Platform starts with registering your app. 
+	 The BBM Social Platform APIs are not generally available for use until the app is registered. 
+	 Successful registration is indicated when <codeph>BBMRegisterEvent.SUCCESS</codeph> event is recieved.
+	 </p>
+	        </apiDesc>
+         <adobeApiEvent id="net.rim.bbm:BBMManager_net.rim.events.BBMUserProfileEvent_userProfileUpdate">
+            <apiName>userProfileUpdate</apiName>
+            <shortdesc>
+	 Dispatched when the user profile is updated.</shortdesc>
+            <prolog/>
+            <adobeApiEventDetail>
+               <adobeApiEventDef>
+                  <apiEventType>net.rim.events.BBMUserProfileEvent</apiEventType>
+                  <adobeApiEventClassifier>net.rim.events.BBMUserProfileEvent</adobeApiEventClassifier>
+                  <apiGeneratedEvent/>
+               </adobeApiEventDef>
+               <apiDesc>
+	 Dispatched when the user profile is updated.
+	 </apiDesc>
+            </adobeApiEventDetail>
+         </adobeApiEvent>
+         <adobeApiEvent id="net.rim.bbm:BBMManager_net.rim.events.BBMRegisterEvent_register_denied">
+            <apiName>register_denied</apiName>
+            <shortdesc>
+	 Dispatched when access to the BBM Social Platform is denied.</shortdesc>
+            <prolog/>
+            <adobeApiEventDetail>
+               <adobeApiEventDef>
+                  <apiEventType>net.rim.events.BBMRegisterEvent</apiEventType>
+                  <adobeApiEventClassifier>net.rim.events.BBMRegisterEvent</adobeApiEventClassifier>
+                  <apiGeneratedEvent/>
+               </adobeApiEventDef>
+               <apiDesc>
+	 Dispatched when access to the BBM Social Platform is denied.
+	 <p>This is usually the result of the user turning off BBM in the application permissions.</p>
+	              </apiDesc>
+            </adobeApiEventDetail>
+         </adobeApiEvent>
+         <adobeApiEvent id="net.rim.bbm:BBMManager_net.rim.events.BBMRegisterEvent_register_unregistered">
+            <apiName>register_unregistered</apiName>
+            <shortdesc>
+	 Dispatched when the application is not registered with the BBM Social Platform.</shortdesc>
+            <prolog/>
+            <adobeApiEventDetail>
+               <adobeApiEventDef>
+                  <apiEventType>net.rim.events.BBMRegisterEvent</apiEventType>
+                  <adobeApiEventClassifier>net.rim.events.BBMRegisterEvent</adobeApiEventClassifier>
+                  <apiGeneratedEvent/>
+               </adobeApiEventDef>
+               <apiDesc>
+	 Dispatched when the application is not registered with the BBM Social Platform.
+	 </apiDesc>
+            </adobeApiEventDetail>
+         </adobeApiEvent>
+         <adobeApiEvent id="net.rim.bbm:BBMManager_net.rim.events.BBMRegisterEvent_register_pending">
+            <apiName>register_pending</apiName>
+            <shortdesc>
+	 Dispatched when the application is in the process of registering with the BBM Social Platform.</shortdesc>
+            <prolog/>
+            <adobeApiEventDetail>
+               <adobeApiEventDef>
+                  <apiEventType>net.rim.events.BBMRegisterEvent</apiEventType>
+                  <adobeApiEventClassifier>net.rim.events.BBMRegisterEvent</adobeApiEventClassifier>
+                  <apiGeneratedEvent/>
+               </adobeApiEventDef>
+               <apiDesc>
+	 Dispatched when the application is in the process of registering with the BBM Social Platform.
+	 </apiDesc>
+            </adobeApiEventDetail>
+         </adobeApiEvent>
+         <adobeApiEvent id="net.rim.bbm:BBMManager_net.rim.events.BBMRegisterEvent_register_success">
+            <apiName>register_success</apiName>
+            <shortdesc>
+	 Dispatched when the application has successfully registered with the BBM Social Platform.</shortdesc>
+            <prolog/>
+            <adobeApiEventDetail>
+               <adobeApiEventDef>
+                  <apiEventType>net.rim.events.BBMRegisterEvent</apiEventType>
+                  <adobeApiEventClassifier>net.rim.events.BBMRegisterEvent</adobeApiEventClassifier>
+                  <apiGeneratedEvent/>
+               </adobeApiEventDef>
+               <apiDesc>
+	 Dispatched when the application has successfully registered with the BBM Social Platform.
+	 </apiDesc>
+            </adobeApiEventDetail>
+         </adobeApiEvent>
+         <adobeApiEvent id="net.rim.bbm:BBMManager_net.rim.events.BBMContactEvent_contact_update">
+            <apiName>contact_update</apiName>
+            <shortdesc>
+	 Dispatched when a contact is updated.</shortdesc>
+            <prolog/>
+            <adobeApiEventDetail>
+               <adobeApiEventDef>
+                  <apiEventType>net.rim.events.BBMContactEvent</apiEventType>
+                  <adobeApiEventClassifier>net.rim.events.BBMContactEvent</adobeApiEventClassifier>
+                  <apiGeneratedEvent/>
+               </adobeApiEventDef>
+               <apiDesc>
+	 Dispatched when a contact is updated.
+	 </apiDesc>
+            </adobeApiEventDetail>
+         </adobeApiEvent>
+         <adobeApiEvent id="net.rim.bbm:BBMManager_net.rim.events.BBMContactEvent_contact_list">
+            <apiName>contact_list</apiName>
+            <shortdesc>
+	 Dispatched when the contact list is retrieved from the BBM Social Platform servers.</shortdesc>
+            <prolog/>
+            <adobeApiEventDetail>
+               <adobeApiEventDef>
+                  <apiEventType>net.rim.events.BBMContactEvent</apiEventType>
+                  <adobeApiEventClassifier>net.rim.events.BBMContactEvent</adobeApiEventClassifier>
+                  <apiGeneratedEvent/>
+               </adobeApiEventDef>
+               <apiDesc>
+	 Dispatched when the contact list is retrieved from the BBM Social Platform servers.
+	 </apiDesc>
+            </adobeApiEventDetail>
+         </adobeApiEvent>
+      </apiClassifier>
+      <apiClassifier id="net.rim.bbm:BBMProfileBoxItem">
+         <apiName>BBMProfileBoxItem</apiName>
+         <shortdesc>
+	 Represents a profile box item in the BBM Social Platform.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>flash.events:EventDispatcher</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 Represents a profile box item in the BBM Social Platform.
+	 <p>
+	              <codeph>BBMProfileBoxItem</codeph> is a class that represents a profile box item accessible through the BBM Social Platform. 
+	 The class provides accessor methods to the main attributes of the ProfileBoxItem including cookie, id, iconId and text.
+	 </p>
+	        </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="net.rim.bbm:BBMContactStatus">
+         <apiName>BBMContactStatus</apiName>
+         <shortdesc>
+	 Represents the status of the device User or a BBMContact.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 Represents the status of the device User or a <codeph>BBMContact</codeph>.
+	 </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="net.rim.bbm:BBMResult">
+         <apiName>BBMResult</apiName>
+         <shortdesc>
+	 Result codes that can be returned by a function.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 Result codes that can be returned by a function.
+	 </apiDesc>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="net.rim.events">
+      <apiName>net.rim.events</apiName>
+      <apiClassifier id="net.rim.events:BBMUserProfileEvent">
+         <apiName>BBMUserProfileEvent</apiName>
+         <shortdesc>
+	 BBMUserProfileEvent events are dispatched by the BBMManager class when the users profile is updated.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>flash.events:Event</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	           <codeph>BBMUserProfileEvent</codeph> events are dispatched by the <codeph>BBMManager</codeph> class when the users profile is updated.
+	 </apiDesc>
+         <adobeApiEvent id="net.rim.events:BBMUserProfileEvent:UPDATE_userProfileUpdate">
+            <apiName>userProfileUpdate</apiName>
+            <prolog/>
+            <adobeApiEventDetail>
+               <adobeApiEventDef>
+                  <apiEventType>net.rim.events:BBMUserProfileEvent:UPDATE</apiEventType>
+                  <adobeApiEventClassifier>net.rim.events:BBMUserProfileEvent</adobeApiEventClassifier>
+                  <apiDefinedEvent/>
+               </adobeApiEventDef>
+            </adobeApiEventDetail>
+         </adobeApiEvent>
+      </apiClassifier>
+      <apiClassifier id="net.rim.events:BBMRegisterEvent">
+         <apiName>BBMRegisterEvent</apiName>
+         <shortdesc>
+	 BBMRegisterEvent events are dispatched by the BBMManager class when registration events occur.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>flash.events:Event</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	           <codeph>BBMRegisterEvent</codeph> events are dispatched by the <codeph>BBMManager</codeph> class when registration events occur.
+	 </apiDesc>
+         <adobeApiEvent id="net.rim.events:BBMRegisterEvent:DENIED_register_denied">
+            <apiName>register_denied</apiName>
+            <prolog/>
+            <adobeApiEventDetail>
+               <adobeApiEventDef>
+                  <apiEventType>net.rim.events:BBMRegisterEvent:DENIED</apiEventType>
+                  <adobeApiEventClassifier>net.rim.events:BBMRegisterEvent</adobeApiEventClassifier>
+                  <apiDefinedEvent/>
+               </adobeApiEventDef>
+            </adobeApiEventDetail>
+         </adobeApiEvent>
+         <adobeApiEvent id="net.rim.events:BBMRegisterEvent:PENDING_register_pending">
+            <apiName>register_pending</apiName>
+            <prolog/>
+            <adobeApiEventDetail>
+               <adobeApiEventDef>
+                  <apiEventType>net.rim.events:BBMRegisterEvent:PENDING</apiEventType>
+                  <adobeApiEventClassifier>net.rim.events:BBMRegisterEvent</adobeApiEventClassifier>
+                  <apiDefinedEvent/>
+               </adobeApiEventDef>
+            </adobeApiEventDetail>
+         </adobeApiEvent>
+         <adobeApiEvent id="net.rim.events:BBMRegisterEvent:SUCCESS_register_success">
+            <apiName>register_success</apiName>
+            <prolog/>
+            <adobeApiEventDetail>
+               <adobeApiEventDef>
+                  <apiEventType>net.rim.events:BBMRegisterEvent:SUCCESS</apiEventType>
+                  <adobeApiEventClassifier>net.rim.events:BBMRegisterEvent</adobeApiEventClassifier>
+                  <apiDefinedEvent/>
+               </adobeApiEventDef>
+            </adobeApiEventDetail>
+         </adobeApiEvent>
+         <adobeApiEvent id="net.rim.events:BBMRegisterEvent:UNREGISTERED_register_unregistered">
+            <apiName>register_unregistered</apiName>
+            <prolog/>
+            <adobeApiEventDetail>
+               <adobeApiEventDef>
+                  <apiEventType>net.rim.events:BBMRegisterEvent:UNREGISTERED</apiEventType>
+                  <adobeApiEventClassifier>net.rim.events:BBMRegisterEvent</adobeApiEventClassifier>
+                  <apiDefinedEvent/>
+               </adobeApiEventDef>
+            </adobeApiEventDetail>
+         </adobeApiEvent>
+      </apiClassifier>
+      <apiClassifier id="net.rim.events:BBMContactEvent">
+         <apiName>BBMContactEvent</apiName>
+         <shortdesc>
+	 BBMContactEvent events are dispatched by the BBMManager class when contacts are updated.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>flash.events:Event</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	           <codeph>BBMContactEvent</codeph> events are dispatched by the <codeph>BBMManager</codeph> class when contacts are updated.
+	 </apiDesc>
+         <adobeApiEvent id="net.rim.events:BBMContactEvent:CONTACT_LIST_contact_list">
+            <apiName>contact_list</apiName>
+            <prolog/>
+            <adobeApiEventDetail>
+               <adobeApiEventDef>
+                  <apiEventType>net.rim.events:BBMContactEvent:CONTACT_LIST</apiEventType>
+                  <adobeApiEventClassifier>net.rim.events:BBMContactEvent</adobeApiEventClassifier>
+                  <apiDefinedEvent/>
+               </adobeApiEventDef>
+            </adobeApiEventDetail>
+         </adobeApiEvent>
+         <adobeApiEvent id="net.rim.events:BBMContactEvent:CONTACT_UPDATE_contact_update">
+            <apiName>contact_update</apiName>
+            <prolog/>
+            <adobeApiEventDetail>
+               <adobeApiEventDef>
+                  <apiEventType>net.rim.events:BBMContactEvent:CONTACT_UPDATE</apiEventType>
+                  <adobeApiEventClassifier>net.rim.events:BBMContactEvent</adobeApiEventClassifier>
+                  <apiDefinedEvent/>
+               </adobeApiEventDef>
+            </adobeApiEventDetail>
+         </adobeApiEvent>
+      </apiClassifier>
+   </apiPackage>
+</allClasses>
