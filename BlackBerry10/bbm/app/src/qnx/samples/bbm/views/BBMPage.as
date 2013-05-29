@@ -1,13 +1,13 @@
 package qnx.samples.bbm.views
 {
-	import net.rim.bbm.BBMUserProfile;
-	import qnx.fuse.ui.actionbar.ActionPlacement;
 	import net.rim.bbm.BBMContactUpdateTypes;
 	import net.rim.bbm.BBMManager;
+	import net.rim.bbm.BBMUserProfile;
 	import net.rim.events.BBMContactEvent;
 	import net.rim.events.BBMRegisterEvent;
 	import net.rim.events.BBMUserProfileEvent;
 
+	import qnx.fuse.ui.actionbar.ActionPlacement;
 	import qnx.fuse.ui.buttons.LabelButton;
 	import qnx.fuse.ui.core.Action;
 	import qnx.fuse.ui.core.ActionBase;
@@ -255,6 +255,8 @@ import net.rim.bbm.BBMUserProfile;
 
 import qnx.fuse.ui.display.Image;
 import qnx.fuse.ui.titlebar.TitleBar;
+
+import flash.filesystem.File;
 
 
 

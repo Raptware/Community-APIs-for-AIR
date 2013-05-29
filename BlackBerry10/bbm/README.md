@@ -10,6 +10,7 @@ The sample code for this application is Open Source under the [Apache 2.0 Licens
 **Requirements:**  
 * BlackBerry 10 SDK for Adobe AIR  
 * BlackBerry 10 NDK  
+* BlackBerry 10 App Framework ( appframework.swc ) Source located here - https://github.com/blackberry/Samples-for-AIR/appframework
 
 **Author(s)** 
 

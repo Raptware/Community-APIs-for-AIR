@@ -96,7 +96,7 @@ char *replaceChar( const char *str, const char replace, const char replaceWith )
 
 void saveFile( const char *path, bbmsp_image_t* image )
 {
-	int fd = open( path, O_WRONLY | O_CREAT );
+	int fd = open( path, O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP );
 	if( fd >= 0 )
 	{
 		write( fd, bbmsp_image_get_data( image ), bbmsp_image_get_data_size( image ) );
