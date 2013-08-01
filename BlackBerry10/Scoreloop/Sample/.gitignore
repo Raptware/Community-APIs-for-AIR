@@ -1,0 +1,8 @@
+bin-debug
+bin-debug/bar-descriptor.xml
+bin-debug/DebugHostInfo.xml
+bin-debug/ScoreloopSample-app.xml
+bin-debug/ScoreloopSample.bar
+bin-debug/ScoreloopSample.swf
+.DS_Store
+lib/.DS_Store

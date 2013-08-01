@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../override.css" type="text/css"><meta name="keywords" content="Score,com.wallwizz.scoreloop.Score,ERROR,EXT,SC_SCORE_SEARCH_LIST_24H,SC_SCORE_SEARCH_LIST_GLOBAL,SC_SCORE_SEARCH_LIST_USER_COUNTRY,SUCCESS,context,email,game,identifier,key,length,level,login,message,minorResult,mode,mode,name,rankingController,result,scoreController,scoresController,searchList,searchList,start,user,userController,value"><title>com.wallwizz.scoreloop.Score</title></head><body><script language="javascript" type="text/javascript" src="../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'Score - Scoreloop ANE Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">Scoreloop ANE Documentation</td><td class="titleTableTopNav" align="right"><a href="../../../package-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../class-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../all-index-A.html" onclick="loadClassListFrame('../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../index.html?com/wallwizz/scoreloop/Score.html&amp;com/wallwizz/scoreloop/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">Score</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Score"); titleBar_setSubNav(false,true,false,false,false,false,false,false,true,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.wallwizz.scoreloop</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  Score</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">Score  <img src="../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> Object</td></tr></table><p></p><p></p><p></p>
+	 Models the score achieved by a particular user in a particular game session.
+	 Instances of \ref SC_Score must, at minimum, contain a result, which
+	 is typically the main numerical outcome achieved by a user of
+	 the game. 
+	 - A score can be a simple single-digit score or a score that is based on time.
+	 - A score can also be more complex with multiple criteria, such as the number of hits made,
+	   the average speed, or the maximum speed that can be modeled by using:
+	    - A minor or secondary result
+	    - A level that indicates the game stage at which the score was achieved
+	    - A mode that indicates the gameplay setting at which the score was achieved
+	 - A score is submitted to the server, and sorting of the scores affects who wins a challenge
+	   or who ranks better in the leaderboards.
+	 - Scores can be sorted in ascending or descending order.
+	 	 The result, minor result, and level are used for score comparison purposes.
+	 You can configure the comparison schema at
+	 <a href="#/developer.scoreloop.com" target="">https://developer.scoreloop.com
+	 </a>.
+	 	 	 Modes are important as Scoreloop generates separate leaderboards for each mode defined for a game.
+	 	 Scores are managed by two data controllers:
+	 - An ScoreController, which manages single instances of Score
+	 - An ScoresController, which manages lists of Score
+	 	 Instances of Score can also contain information about score rank, which is the
+	 position of the score on a Scoreloop leaderboard. However, the rank of a score
+	 will generally only have a meaningful value when it is retrieved from the
+	 server using an ScoresController.
+	 	 <p></p><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#context" class="signatureLink">context</a> : Array<div class="summaryTableDescription">
+		 Context value array of the score.</div></td><td class="summaryTableOwnerCol">Score</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#level" class="signatureLink">level</a> : int<div class="summaryTableDescription">
+		 The level of the score.</div></td><td class="summaryTableOwnerCol">Score</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#minorResult" class="signatureLink">minorResult</a> : int<div class="summaryTableDescription">
+		 Minor Result of the Score.</div></td><td class="summaryTableOwnerCol">Score</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#mode" class="signatureLink">mode</a> : int<div class="summaryTableDescription">
+		 The game mode of the Score.</div></td><td class="summaryTableOwnerCol">Score</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#result" class="signatureLink">result</a> : int<div class="summaryTableDescription">
+		  Result of the Score.</div></td><td class="summaryTableOwnerCol">Score</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#user" class="signatureLink">user</a> : <a href="../../../com/wallwizz/scoreloop/User.html">User</a><div class="summaryTableDescription">[read-only] 
+		 The User that has associated with this score.</div></td><td class="summaryTableOwnerCol">Score</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#Score()" class="signatureLink">Score</a>(mode:int, level:int, result:Number, minorResult:Number, user:<a href="../../../com/wallwizz/scoreloop/User.html">User</a> = null, context:Array = null)</div><div class="summaryTableDescription">
+		 Instances of \ref SC_Score model the score achieved by a particular
+		 user in a particular game session.</div></td><td class="summaryTableOwnerCol">Score</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="context"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">context</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>context:Array</code><p></p><p></p><p>
+		 Context value array of the score. 
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get context():Array</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set context(value:Array):void</code><br/></div><a name="propertyDetail"></a><a name="level"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">level</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>level:int</code><p></p><p></p><p>
+		 The level of the score. 
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get level():int</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set level(value:int):void</code><br/></div><a name="propertyDetail"></a><a name="minorResult"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">minorResult</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>minorResult:int</code><p></p><p></p><p>
+		 Minor Result of the Score. 
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get minorResult():int</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set minorResult(value:int):void</code><br/></div><a name="propertyDetail"></a><a name="mode"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">mode</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>mode:int</code><p></p><p></p><p>
+		 The game mode of the Score. 
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get mode():int</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set mode(value:int):void</code><br/></div><a name="propertyDetail"></a><a name="result"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">result</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>result:int</code><p></p><p></p><p>
+		  Result of the Score.
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get result():int</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set result(value:int):void</code><br/></div><a name="propertyDetail"></a><a name="user"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">user</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>user:<a href="../../../com/wallwizz/scoreloop/User.html">User</a></code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 The User that has associated with this score. 
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get user():<a href="../../../com/wallwizz/scoreloop/User.html">User</a></code><br/></div><a name="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><a name="Score()"></a><a name="Score(int,int,Number,Number,com.wallwizz.scoreloop.User,Array)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">Score</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function Score(mode:int, level:int, result:Number, minorResult:Number, user:<a href="../../../com/wallwizz/scoreloop/User.html">User</a> = null, context:Array = null)</code><p></p><p>
+		 Instances of \ref SC_Score model the score achieved by a particular
+		 user in a particular game session. 
+		 </p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">mode</span>:int</code> &mdash; Mode of the Score
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">level</span>:int</code> &mdash; The level that the current score was achieved at
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">result</span>:Number</code> &mdash; The result property for the score
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">minorResult</span>:Number</code> &mdash; The minor result property for the score
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">user</span>:<a href="../../../com/wallwizz/scoreloop/User.html">User</a></code> (default = <code>null</code>)<code></code> &mdash; The user who obtained and submitted the score(should be null when creating a score for submitting)
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">context</span>:Array</code> (default = <code>null</code>)<code></code> &mdash; context associated with score
+		 
+		 </td></tr></table></div><br/><br/><hr><br/><p></p><center class="copyright"><footer><a href="http://www.wallwizz.com"> All rights reserver 2012 - WallWizz.com </a></footer><br/>Sat Dec 29 2012, 08:55 PM Z  </center></div></body></html><!-- All rights reserver 2012 - WallWizz.com <br/>Sat Dec 29 2012, 08:55 PM Z  -->

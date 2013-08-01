@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="true" useMultiPlatformConfig="true" version="3">
+  <includeClasses>
+    <classEntry path="com.wallwizz.scoreloop.Scoreloop"/>
+    <classEntry path="com.wallwizz.scoreloop.Client"/>
+    <classEntry path="com.wallwizz.scoreloop.Game"/>
+    <classEntry path="com.wallwizz.scoreloop.ScoreController"/>
+    <classEntry path="com.wallwizz.scoreloop.Score"/>
+    <classEntry path="com.wallwizz.scoreloop.NetworkEvent"/>
+    <classEntry path="com.wallwizz.scoreloop.ScoresController"/>
+    <classEntry path="com.wallwizz.scoreloop.Range"/>
+    <classEntry path="com.wallwizz.scoreloop.User"/>
+    <classEntry path="com.wallwizz.scoreloop.RankingController"/>
+    <classEntry path="com.wallwizz.scoreloop.UserController"/>
+    <classEntry path="com.wallwizz.scoreloop.Context"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>
